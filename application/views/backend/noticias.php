@@ -30,18 +30,23 @@
                                  <label id="txt-data">Data</label>
                                  <input id="txt-data" name="txt-data" type="date" class="form-control" placeholder="Escolha a data">
                                  <br/>
-                                 <label id="txt-destaque">Tipo de notícia</label>
-                                   <select name="txt-destaque" id="txt-destaque" class="form-control" onchange="alteraDiv()">
-                                     <option value="0">Normal</option>
-                                     <option value="1">Destaque</option>
-                                   </select>
-                                   <br/>
-                                   <div id="form_destaque" style="display:none;">
-                                           <div class="form-group">
-                                               <label id="txt-img">Imagem da Notícia</label>
-                                               <input type="file" class="form-control" id="txt-img" name="txt-img">
-                                           </div>
-                                       </div>
+                                 <div class="form-group">
+                                    <label class="label-control" for="txt-titulo">Tipo de notícia</label>
+                                    <select name="noticia" id="tipo_noticia" class="form-control" onchange="alteraDiv()">
+                                        <option value="1">Normal</option>
+                                        <option value="2">Destaque</option>
+                                    </select>
+                                 </div>
+                                 
+
+
+                                 <div id="form_destaque" style="display:none;">
+                                    <div class="form-group">
+                                        <label id="txt-img">Imagem da Notícia</label>
+                                        <input type="file" class="form-control" id="txt-img" name="txt-img">
+                                    </div>
+                                 </div>
+
                              </div>
                              <button type="submit" class="btn btn-primary">Cadastrar</button>
                             <?php
@@ -117,44 +122,12 @@
 
 <script type="text/javascript">
     alteraDiv = function (){
-        if($('#txt-destaque').val() == 0){
+        if($('#tipo_noticia').val() == 1){
             $("#form_destaque").hide();
         }
 
-        if($('#txt-destaque').val() == 1){
+        if($('#tipo_noticia').val() == 2){
             $("#form_destaque").show();
         }
     }
 </script>
-
-<!--
-
-<form role="form">
-    <div class="form-group">
-        <label>titulo</label>
-        <input class="form-control" placeholder="Entre com o texto">
-    </div>
-    <div class="form-group">
-        <label>Foto Destaque</label>
-        <input type="file">
-    </div>
-    <div class="form-group">
-        <label>Conteúdo</label>
-        <textarea class="form-control" rows="3"></textarea>
-    </div>
-
-    <div class="form-group">
-        <label>Selects</label>
-        <select class="form-control">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-        </select>
-    </div>
-    <button type="submit" class="btn btn-default">Cadastrar</button>
-    <button type="reset" class="btn btn-default">Limpar</button>
-</form>
-
--->
