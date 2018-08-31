@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!--<meta http-equiv="x-ua-compatible" content="ie=edge">-->
 
+		<link rel="shortcut icon" href="<?php echo base_url('/assets/frontend/img/icebicon.ico'); ?>" />
         <title><?php echo $titulo.' - '.$subtitulo ?></title>
 
         <!-- Font Awesome -->
@@ -15,7 +16,7 @@
 
         <!-- Material Design Bootstrap -->
         <link href="<?php echo base_url('assets/frontend/css/materialize.css') ?>" rel="stylesheet">
-    
+
 
         <!-- Magnific-popup css -->
         <link href="<?php echo base_url('assets/frontend/css/magnific-popup.css') ?>" rel="stylesheet">
@@ -35,9 +36,9 @@
 
         <link href="<?php echo base_url('assets/frontend/css/responsive.css') ?>" rel="stylesheet">
         <link href="<?php echo base_url('assets/frontend/css/style.css') ?>" rel="stylesheet">
-        
+
          <link href="<?php echo base_url('assets/frontend/css/media.css') ?>" rel="stylesheet">
 
 
-    
+
     </head>
