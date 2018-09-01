@@ -74,7 +74,7 @@
         <?php
         $arquivo = $sala->arquivo;
         ?>
-        <p><a href="assets/arquivos/salas/<?php echo $arquivo?>" target="_blank"><?php echo $sala->nome?></a></p>
+        <p><a href="<?php echo base_url('assets/arquivos/salas/'.$arquivo) ?>" target="_blank"><?php echo $sala->nome?></a></p>
       </div>
   <?php } ?>
     </div>
@@ -96,7 +96,7 @@
         <?php
         $arquivo = $mapa->arquivo;
         ?>
-        <p><a href="assets/arquivos/mapas/<?php echo $arquivo?>" target="_blank"><?php echo $mapa->nome?></a></p>
+        <p><a href="<?php echo base_url('assets/arquivos/salas/'.$arquivo) ?>" target="_blank"><?php echo $mapa->nome?></a></p>
       </div>
   <?php } ?>
     </div>
