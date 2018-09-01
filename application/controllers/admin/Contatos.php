@@ -25,7 +25,7 @@ class Contatos extends CI_Controller {
 		$this->load->view('backend/template/html-header', $dados);
 
 		$this->load->view('backend/template/template');
-        $this->load->view('backend/Contatos');
+        $this->load->view('backend/contatos');
 
 		$this->load->view('backend/template/html-footer');
 	}

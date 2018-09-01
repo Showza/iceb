@@ -31,10 +31,15 @@ class Salas extends CI_Controller {
 	public function novo_arquivo($id, $arquivo){
         /*Exclusão do arquivo antigo*/
         $this->load->helper("file");
-       
+		$caminhoArquivo = './assets/arquivos/salas/'.$arquivo;
+
+         if (!unlink($caminhoArquivo)){
+             echo 'Não foi possível excluir o arquivo antigo';
+         }
+
             $arquivo = $_FILES['arquivo'];
             $original_name = $_FILES['arquivo']['name'];
-            $new_name = strtr(utf8_decode($original_name), utf8_decode('âãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
+            $new_name = strtr(utf8_decode($original_name), utf8_decode('âãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY__');
             $configuracao['upload_path'] = './assets/arquivos/salas';
             $configuracao['allowed_types'] = 'pdf';
             $configuracao['file_name'] = $new_name;
@@ -75,7 +80,7 @@ class Salas extends CI_Controller {
         $this->load->library('form_validation');
         $this->form_validation->set_rules('txt-nome','Nome',
             'required|min_length[3]');
-        
+
         if($this->form_validation->run() == FALSE){
             $this->index();
         }
@@ -83,7 +88,7 @@ class Salas extends CI_Controller {
             $nome = $this->input->post('txt-nome');
             $arquivo = $_FILES['arquivo'];
 			$original_name = $_FILES['arquivo']['name'];
-			$new_name = strtr(utf8_decode($original_name), utf8_decode(' àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');;
+			$new_name = strtr(utf8_decode($original_name), utf8_decode(' àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY__');;
 			$configuracao['upload_path'] = './assets/arquivos/salas/';
 			$configuracao['allowed_types'] = 'pdf';
 			$configuracao['file_name'] = $new_name;
@@ -102,8 +107,10 @@ class Salas extends CI_Controller {
         }
     }
 
-    public function remover($id){
+    public function remover($id, $arquivo){
         if($this->modelsalas->remover($id)){
+			$filePath = './assets/arquivos/salas/'.$arquivo;
+			unlink($filePath);
             redirect(base_url('admin/salas'));
         }
         else{

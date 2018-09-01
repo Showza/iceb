@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class Salas_model extends CI_Model {
+class Mapa_model extends CI_Model {
 
 	public $id;
 	public $nome;
@@ -10,32 +10,32 @@ class Salas_model extends CI_Model {
 		parent::__construct();
 	}
 
-    public function listar_salas(){
+    public function listar_mapas(){
         $this->db->order_by('id','ASC');
-        return $this->db->get('salas')->result();
+        return $this->db->get('mapas')->result();
     }
 
-    public function listar_sala($id){
-        $this->db->from('salas');
-        $this->db->where('salas.id',$id);
+    public function listar_mapa($id){
+        $this->db->from('mapas');
+        $this->db->where('mapas.id',$id);
         return $this->db->get()->result();
     }
 
     public function adicionar($nome, $arquivo){
         $dados['nome'] = $nome;
         $dados['arquivo'] = $arquivo;
-        return $this->db->insert('salas',$dados);
+        return $this->db->insert('mapas',$dados);
     }
 
     public function remover($id){
         $this->db->where('id',$id);
-        return $this->db->delete('salas');
+        return $this->db->delete('mapas');
     }
 
     public function nova_matriz($id, $new_name)
     {
       $dados['arquivo'] = $new_name;
       $this->db->where('id',$id);
-      return $this->db->update('salas',$dados);
+      return $this->db->update('mapas',$dados);
     }
 }
