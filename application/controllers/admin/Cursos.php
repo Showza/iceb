@@ -41,7 +41,7 @@ class Cursos extends CI_Controller {
         {
             $link = $_FILES['txt-link'];
             $original_name = $_FILES['txt-link']['name'];
-            $new_name = strtr(utf8_decode($original_name), utf8_decode('âãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');
+            $new_name = strtr(utf8_decode($original_name), utf8_decode(' âãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY__');
             $configuracao['upload_path'] = './assets/arquivos/matrizes';
             $configuracao['allowed_types'] = 'pdf';
             $configuracao['file_name'] = $new_name;
@@ -111,7 +111,7 @@ class Cursos extends CI_Controller {
 
             $link = $_FILES['txt-link'];
 						$original_name = $_FILES['txt-link']['name'];
-						$new_name = strtr(utf8_decode($original_name), utf8_decode(' àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY');;
+						$new_name = strtr(utf8_decode($original_name), utf8_decode(' àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY__');;
 						$configuracao['upload_path'] = './assets/arquivos/matrizes/';
 						$configuracao['allowed_types'] = 'pdf';
 						$configuracao['file_name'] = $new_name;

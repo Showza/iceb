@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo base_url('admin/cursos') ?>"><?php echo $titulo ?></a>
+            <a class="navbar-brand" href="<?php echo base_url('admin') ?>"><?php echo $titulo ?></a>
         </div>
         <!-- /.navbar-top-links -->
 
@@ -35,10 +35,10 @@
                         <a href="<?php echo base_url('admin/diretoria') ?>"><i class="fa fa-university"></i> Diretoria</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url('admin/mapa') ?>"><i class="fa fa-map"></i> Mapa </a>
+                        <a href="<?php echo base_url('admin/mapa') ?>"><i class="fa fa-map-marker"></i> Mapa </a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url('admin/salas') ?>"><i class="fa fa-man"></i>Salas </a>
+                        <a href="<?php echo base_url('admin/salas') ?>"><i class="fa fa-clock-o"></i> Salas </a>
                     </li>
                     <li>
                         <a href="<?php echo base_url('admin/usuarios/logout') ?>"><i class="fa fa-sign-out fa-fw"></i> Sair do Sistema</a>

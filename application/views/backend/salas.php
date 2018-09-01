@@ -22,7 +22,7 @@
                              <div class="form-group">
                                  <br/>
                                  <label id="txt-nome">Nome</label>
-                                 <input id="txt-nome" name="txt-nome" type="text" class="form-control" placeholder="Nome do pavilhão - dia da semana">
+                                 <input id="txt-nome" name="txt-nome" type="text" class="form-control" placeholder="Nome do prédio - Dia da semana">
                                  <br/>
                                  <label id="arquivo">Arquivo de alocação de salas</label>
                                  <input id="arquivo" name="arquivo" type="file" value="Procurar arquivo...">
@@ -68,7 +68,7 @@
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                                                <a type="button" class="btn btn-primary" href="'.base_url("admin/salas/remover/".$sala->id).'">Excluir</a>
+                                                <a type="button" class="btn btn-primary" href="'.base_url("admin/salas/remover/".$sala->id."/".$sala->arquivo).'">Excluir</a>
                                             </div>
 
                                         </div>

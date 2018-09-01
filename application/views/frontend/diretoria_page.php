@@ -17,7 +17,7 @@
                             <h3>Prof. André Talvani Pedrosa da Silva</h3>
                             <p>Diretor</p>
                             <p><a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4799312H7">Lattes</a></p>
-                            
+
                           </div>
                           <hr>
                             <br/>
@@ -32,7 +32,7 @@
                               <br/>
                                 <div >
                                 <img src="<?php echo base_url('assets/frontend/img/pessoal/Rose.jpeg') ?>" class="imagemdiretoria">
-                                <h3>Roseanny Mendes</h3>
+                                <h3>Roseany Mendes</h3>
                                 <p>Secretária</p>
                                 <br/><br/>
                               </div>

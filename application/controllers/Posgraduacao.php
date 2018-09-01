@@ -16,6 +16,8 @@ class Posgraduacao extends CI_Controller {
 		$this->load->model('Posgraduacao_model','modelposgraduacao'); // Acessoa ao model.
 		$this->load->model('Departamentos_model','modeldepartamentos'); // Acessoa ao model.v
 		$this->load->model('Salas_model','modelsalas'); // Acessoa ao model.
+		$this->load->model('Mapa_model','modelmapa'); // Acessoa ao model.
+		$dados['mapas'] = $this->modelmapa->listar_mapas();
 
 		$dados['listacursos'] = $this->modelcursos->listar_cursos();
 		$dados['cursos'] = $this->modelposgraduacao->listar_curso($id);
