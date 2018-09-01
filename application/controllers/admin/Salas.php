@@ -39,7 +39,7 @@ class Salas extends CI_Controller {
 
             $arquivo = $_FILES['arquivo'];
             $original_name = $_FILES['arquivo']['name'];
-            $new_name = strtr(utf8_decode($original_name), utf8_decode('âãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY__');
+            $new_name = strtr(utf8_decode($original_name), utf8_decode(' âãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY__');
             $configuracao['upload_path'] = './assets/arquivos/salas';
             $configuracao['allowed_types'] = 'pdf';
             $configuracao['file_name'] = $new_name;
