@@ -12,8 +12,7 @@ body{
     background:#fff;
     font-family: "Roboto";
     font-weight: 300;
-    overflow-x:  hidden;
-
+    overflow-x:  hidden !important;
 
 }
 h1,
@@ -771,3 +770,24 @@ ul.numerics{list-style:inside decimal}
 .ul.kas-icon-aero{}
 ul.kas-icon-aero li a:before{font-family: 'Glyphicons Halflings'; font-size:9px; content: "\e258"; padding-right:8px; }
 
+/* ========= CLASSES FURRY ========= */
+
+/* Classes do Header */
+.navbartopfixedpals{background-color: rgba(0,0,0,0); height: 90px; padding-bottom: 10px;margin-bottom:20px;}
+.navbartopfixedtals{background: url('../img/ICEBERA2.png') no-repeat !important; width: 100%; height: 90px; padding-bottom: 10px; margin-bottom:20px;}
+.navbardoheader{margin-top:-10px;}
+.navbardoheader2{margin-top: 10px;}
+.navbarnavbrandheader{display: inline; margin-left: -65px; margin-right: 5px; margin-top:5px;}
+.linkassets{width: 150px!important;}
+.spanheadernomes{display: block; margin-top: -45px;}
+.dropdowncoisas{color: black; font-size: 15px;}
+.navitemmenutal{margin: 0px 5px 0px 5px}
+.tamanhoultal{width: 100%}
+.bodyoutraspaginas{margin-top: 100px;}
+.mobiledataactivatedtal{font-size: 30px;}
+
+/* Classes do footer */
+.desenvolvidopor{background-color: rgba(255,255,255,0.1); padding-top: 15px; padding-bottom: 10px;}
+.dporvol{color: white;}
+#imgufop2{width: 60px;}
+.overflowautofooter{overflow: auto;}

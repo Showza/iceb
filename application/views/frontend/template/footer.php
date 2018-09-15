@@ -1,13 +1,13 @@
 
 
-        <section id="footer" class="footer" style="overflow: auto;">
+        <section id="footer" class="footer overflowautofooter">
             <div class="container">
                 <div class="row">
                     <div class="col-md-2"> </div>
                     <div class="main_footer_area white-text p-b-12">
                         <div class="col-lg-1">
                             <div class="single_f_widget m-t-3 wow fadeInUp">
-                                <img src="<?php echo base_url('assets/frontend/img/ufop2.png')?>" alt="logo-iceb" style="width: 60px;">
+                                <img src="<?php echo base_url('assets/frontend/img/ufop2.png')?>" alt="logo-iceb" id="imgufop2">
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -44,9 +44,9 @@
               <!-- <div class="row"> -->
                 <!-- <br><br> -->
               <!-- </div> -->
-                   <div style="background-color: rgba(255,255,255,0.1); padding-top: 15px; padding-bottom: 10px;">
-                     <center> <h6 class="copyright" style="color: white;">
-                        Desenvolvido por <a style="color: white;" href="http://voluta.ufop.br/" target="_blank">Voluta Soluções Digitais
+                   <div class="desenvolvidopor">
+                     <center> <h6 class="copyright dporvol" >
+                        Desenvolvido por <a class="dporvol" href="http://voluta.ufop.br/" target="_blank">Voluta Soluções Digitais
                         </a></h6>
                      </center>
                    </div>
