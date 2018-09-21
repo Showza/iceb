@@ -35,9 +35,10 @@
         <!-- Your custom styles (optional) -->
 
         <link href="<?php echo base_url('assets/frontend/css/responsive.css') ?>" rel="stylesheet">
-        <link href="<?php echo base_url('assets/frontend/css/style.css') ?>" rel="stylesheet">
+
 
          <link href="<?php echo base_url('assets/frontend/css/media.css') ?>" rel="stylesheet">
+		 <link href="<?php echo base_url('assets/frontend/css/style.css') ?>" rel="stylesheet">
 
 
 

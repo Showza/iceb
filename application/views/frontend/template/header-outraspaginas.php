@@ -1,5 +1,5 @@
 
-    <body data-spy="scroll" data-target=".navbar-desktop" style="overflow-x: hidden !important; margin-top: 100px;">
+    <body data-spy="scroll" data-target=".navbar-desktop " class="bodyoutraspaginas">
         <!-- Start your project here-->
         <!--Navbar-->
 
@@ -7,42 +7,42 @@
 
 
 
-        <nav class="navbar navbar-fixed-top bg-faded"  style="  background:url('<?php echo base_url('assets/frontend/img/ICEBERA2.png') ?>')no-repeat; width: 100%; height: 90px; padding-bottom: 10px;margin-bottom:20px; ">
+        <nav class="navbar navbar-fixed-top bg-faded navbartopfixedtals">
             <!--Collapse button-->
             <div class="container">
-                <a href="#" data-activates="mobile-menu" class="button-collapse left"><i class="fa fa-bars " style="font-size: 30px;"></i></a>
+                <a href="#" data-activates="mobile-menu" class="button-collapse left"><i class="fa fa-bars mobiledataactivatedtal"></i></a>
 
                 <!--Content for large and medium screens-->
                 <center>
 
-                <div class="navbar-desktop " style="margin-top:-10px">
+                <div class="navbar-desktop navbardoheader">
 
                     <!--Links-->
                     <center>
 
-                    <ul class="nav navbar-nav hidden-md-down" style="margin-top:10px;  ">
+                    <ul class="nav navbar-nav hidden-md-down navbardoheader2">
 
                      <!--Navbar Brand-->
-                       <span class="nav-item navbar-brand" style="display: inline; margin-left: -65px; margin-right: 5px; margin-top:5px; ">
-                            <a href="http://www.ufop.br/" target="_blank"><img src="<?php echo base_url('assets/frontend/img/icones/ufop.png') ?>" style="width: 150px"></a>
+                       <span class="nav-item navbar-brand navbarnavbrandheader">
+                            <a href="http://www.ufop.br/" target="_blank"><img src="<?php echo base_url('assets/frontend/img/icones/ufop.png') ?>" class="linkassets"></a>
                         </span>
 
                         <center><li class="nav-item menu" >
                             <a href="<?php echo base_url() ?>"><img src="<?php echo base_url('assets/frontend/img/icones/home.png' )?>" class="icone">
-                                <span style="display: block; margin-top: -45px "> INICIO </span>
+                                <span class="spanheadernomes"> INICIO </span>
                           <span class="sr-only">(current)</span></a>
                         </li></center>
 
                         <center><li class="nav-item menu" >
                             <a href="<?php echo base_url('/diretoria') ?>"><img src="<?php echo base_url('assets/frontend/img/icones/instituto.png' )?>" class="icone">
-                            <span class="nav-link" href="#service" style=" display: block;margin-top: -45px;" >O INSTITUTO</span></a>
+                            <span class="nav-link spanheadernomes" href="#service" >O INSTITUTO</span></a>
 
                         </li></center>
 
 
                         <center><li class="nav-item menu dropdown"  >
                             <a data-toggle="dropdown"><img src="<?php echo base_url('assets/frontend/img/icones/departamento.png')?>" class="icone">
-                            <span  style=" display: block;margin-top: -45px;" >DEPARTAMENTOS</span></a>
+                            <span  class="spanheadernomes" >DEPARTAMENTOS</span></a>
                             <ul class="dropdown-menu drop-ul">
                                 <?php foreach($departamentos as $departamento){ ?>
                                 <li >
@@ -58,10 +58,10 @@
 
                         <center><li class="nav-item menu dropdown" >
                             <a data-toggle="dropdown"><img src="<?php echo base_url('assets/frontend/img/icones/ensino.png')?>" class="icone" >
-                            <span class="nav-link"  style=" display: block;margin-top: -45px;" >ENSINO</span></a>
+                            <span class="nav-link spanheadernomes" >ENSINO</span></a>
                             <ul class="dropdown-menu drop-ul">
 
-                                <li class="nav-item menu dropdown" ><center><a   style="color: black; font-size: 15px;"> Bacharelado</a></center>
+                                <li class="nav-item menu dropdown" ><center><a  class="dropdowncoisas"> Bacharelado</a></center>
                                   </li>
                                   <br><hr>
                                         <?php foreach($listacursos as $listacurso){ ?>
@@ -83,7 +83,7 @@
 
                                   <li class="nav-item menu dropdown" >
 <hr>
-                                    <center><a   style="color: black; font-size: 15px;"> Licenciatura</a></center>
+                                    <center><a  class="dropdowncoisas"> Licenciatura</a></center>
                                   <hr>
                                   </li>
 
@@ -115,7 +115,7 @@
 
                         <center><li class="nav-item menu dropdown" >
                             <a data-toggle="dropdown"><img src="<?php echo base_url('assets/frontend/img/icones/pesquisa.png')?>" class="icone">
-                            <span class="nav-link" href="#service" style=" display: block;margin-top: -45px;" >PÓS-GRADUAÇÃO</span></a>
+                            <span class="nav-link spanheadernomes" href="#service" >PÓS-GRADUAÇÃO</span></a>
 
                          <ul class="dropdown-menu drop-ul">
                             <?php foreach($posgraduacao as $pos){ ?>
@@ -130,15 +130,15 @@
 
 
 
-                        <center><li class="nav-item menu" style="margin: 0px 5px 0px 5px ">
+                        <center><li class="nav-item menu navitemmenutal" >
                             <a href="<?php echo base_url('/noticias') ?>"><img src="<?php echo base_url('assets/frontend/img/icones/news.png')?>" class="icone">
 
-                            <span class="nav-link" href="#service" style=" display: block;margin-top: -45px;" >NOTICIAS</span></a>
+                            <span class="nav-link spanheadernomes" href="#service" >NOTICIAS</span></a>
                         </li></center>
 
                         <center><li class="nav-item menu" >
                             <a href="<?php echo base_url('contatos')?>"><img src="<?php echo base_url('assets/frontend/img/icones/contato.png')?>" class="icone">
-                            <span class="nav-link" href="#service" style=" display: block;margin-top: -45px;" >CONTATO</span></a>
+                            <span class="nav-link spanheadernomes" href="#service" >CONTATO</span></a>
                         </li></center>
 
                     </ul>
@@ -160,7 +160,7 @@
 
                         <li class="nav-item  dropdown"  >
                             <a data-toggle="dropdown" class="nav-link" >Departamentos</a>
-                            <ul class=" dropdown-menu" style="width: 100%">
+                            <ul class=" dropdown-menu tamanhoultal">
                                 <?php foreach($departamentos as $departamento){ ?>
                           <li ><a class="drop-li" href="<?php echo ($departamento->link)?>" target="_blank"> <?php echo $departamento->titulo?> <hr></a>
                             </li>
@@ -189,7 +189,7 @@
 
                             <li class="nav-item menu dropdown" >
                             <a data-toggle="dropdown">Pós-graduação</a>
-                             <ul class="dropdown-menu " style="width: 100%" >
+                             <ul class="dropdown-menu tamanhoultal"  >
                                 <?php foreach($posgraduacao as $pos){ ?>
                                   <li  ><a class="nav-link" href="<?php echo $pos->link?>"> <?php
 
