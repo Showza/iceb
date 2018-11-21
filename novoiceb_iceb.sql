@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: 15-Set-2018 às 19:57
--- Versão do servidor: 5.7.19
--- PHP Version: 5.6.31
+-- Host: 127.0.0.1
+-- Generation Time: 20-Nov-2018 às 21:51
+-- Versão do servidor: 10.1.35-MariaDB
+-- versão do PHP: 7.2.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -28,20 +28,102 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `ci_session`
 --
 
-DROP TABLE IF EXISTS `ci_session`;
-CREATE TABLE IF NOT EXISTS `ci_session` (
+CREATE TABLE `ci_session` (
   `id` varchar(40) CHARACTER SET utf8 NOT NULL,
   `ip_address` varchar(45) CHARACTER SET utf8 NOT NULL,
   `timestamp` int(10) UNSIGNED NOT NULL DEFAULT '0',
-  `data` blob NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `ci_sessions_timestamp` (`timestamp`)
+  `data` blob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `ci_session`
 --
 
+INSERT INTO `ci_session` (`id`, `ip_address`, `timestamp`, `data`) VALUES
+('02q34883fggphehjrjjimhmtlthrm801', '::1', 1542424532, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432343533323b6c6f6761646f7c623a303b),
+('0d4ietmq4reki8s4bufr3tvek0hr3tvm', '::1', 1542428040, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432383034303b6c6f6761646f7c623a303b),
+('1ceq3db189266ib9ia7045hp11o0smqv', '::1', 1542421097, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432313039373b6c6f6761646f7c623a303b),
+('22eprhfpmqt4qd4tgr46lb8vg29igt6g', '::1', 1542423129, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432333132393b6c6f6761646f7c623a303b),
+('2k1a2ldpcec52rs16qes7sfq7g1jpqf6', '::1', 1542427368, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432373336383b6c6f6761646f7c623a303b),
+('2renk48jrfjlt3r4ia0jb7kj1skfsoqf', '::1', 1542430625, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433303632353b6c6f6761646f7c623a303b),
+('36ooblevtcl8id1arhbvtd3jmhtrtrfk', '::1', 1542433971, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433333937313b6c6f6761646f7c623a303b),
+('3863bli8nffqq2cbh7gr7vip7sfd0f21', '::1', 1542419308, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323431393330383b6c6f6761646f7c623a303b),
+('4ngi8qq849t7pv9dnr7ucf1ps4uk0fhp', '::1', 1542691995, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323639313939353b6c6f6761646f7c623a313b),
+('56ge5o18h2okuaf8vq1kv1ceg5nflbkl', '::1', 1542425155, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432353135353b6c6f6761646f7c623a303b),
+('672mhf00as73062qhvcdisfq2j9oev7k', '::1', 1542421722, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432313732323b6c6f6761646f7c623a303b),
+('6qalutltk0mcm9fj2mrp9ef1o098fc29', '::1', 1542420129, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432303132393b6c6f6761646f7c623a303b),
+('7hblvviote0lrv096cn2fb7prg0id9fm', '::1', 1542669628, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323636393632383b),
+('7j6r05mk7jevmfbm2lanqmlr3r86jupp', '::1', 1542432635, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433323633353b6c6f6761646f7c623a303b),
+('7k00f1789cqrfmnph0tus1k9gl8c00je', '::1', 1542420451, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432303435313b6c6f6761646f7c623a303b),
+('7mjgr0v41nh3acorsubes6l6jr46b0nv', '::1', 1542424141, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432343134313b6c6f6761646f7c623a303b),
+('7o4kadgg9k1krk1bjim7fmfq4v9h4lo8', '::1', 1542691274, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323639313237343b6c6f6761646f7c623a303b),
+('86eb1canedr7fs179s78t2hodcmm484v', '::1', 1542423836, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432333833363b6c6f6761646f7c623a303b),
+('8n9cgr40i1nd24aahrbsoiur8ecdsq0m', '::1', 1542433982, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433333937313b6c6f6761646f7c623a303b),
+('8o2g9pel4sr66tf81ugpj3mkji464i3g', '::1', 1542419828, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323431393832383b6c6f6761646f7c623a303b),
+('ah4hu57u73pa7o3a577m7o28b506aoqq', '::1', 1542422681, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432323638313b6c6f6761646f7c623a303b),
+('appn4p5colhfvi31o0ncqk30d3mm7cu8', '::1', 1542692025, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323639313939353b6c6f6761646f7c623a303b),
+('atsc7s08qmtt9767dj4tif8jng3c3uif', '::1', 1542433326, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433333332363b6c6f6761646f7c623a303b),
+('c18c7essdhe2ogibgt5rnoer8i6uthq1', '::1', 1542427036, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432373033363b6c6f6761646f7c623a303b),
+('d7iop9t0oodnh08q2r8l0a5cema967cj', '::1', 1542487764, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323438373736343b),
+('dcvbop2ios0h5n39iltu7c657d2ed06v', '::1', 1542424846, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432343834363b6c6f6761646f7c623a303b),
+('ddou3cfp5fag7gj38a57s31b44gb33ct', '::1', 1542746961, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323734363936313b),
+('ds4tintek4qdpqpr0p8ob5huvotvfkq3', '::1', 1542746962, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323734363936313b),
+('euf41u2ejcmtea0u86c9j9u53suglh05', '::1', 1542690637, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323639303633373b6c6f6761646f7c623a303b),
+('fhhgmslusl63hndf3plg8sdl4bl5fsv9', '::1', 1542430297, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433303239373b6c6f6761646f7c623a303b),
+('gjcb0q97qtmh02f1cji1b2g3b1m0p0g8', '::1', 1542745980, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323734353938303b),
+('gm234dci0ugf9phq0lt5cm5q628aom3c', '::1', 1542428367, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432383336373b6c6f6761646f7c623a303b),
+('h41vufh42l6dgbs20bcdevvduo06j7ar', '::1', 1542429992, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432393939323b6c6f6761646f7c623a303b),
+('hmjh89k0q1vqmdb3o0a7rarq1po9huca', '::1', 1542428668, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432383636383b6c6f6761646f7c623a303b),
+('j1fbf8gtdc6mml1gbqa9fjefg06c81a2', '::1', 1542426210, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432363231303b6c6f6761646f7c623a303b),
+('jvnpflcbpb45gnpe6l8tavtk51earqt1', '::1', 1542418181, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323431383138313b6c6f6761646f7c623a303b),
+('k3fk9aok4e77faqi6p6r4pclpo9h51oh', '::1', 1542485113, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323438353131333b),
+('koolg9t5j9to09cu3tvsbc6mbohe2jev', '::1', 1542431864, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433313836343b6c6f6761646f7c623a303b),
+('ldha6usqglqeo04qru4lj2pj3bo15hd6', '::1', 1542425461, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432353436313b6c6f6761646f7c623a303b),
+('lof3ephc6jm3sddishc36iifp9qcvjt6', '::1', 1542421407, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432313430373b6c6f6761646f7c623a303b),
+('lr8r87nsuccgmbo4aaivvi7voi6e45a2', '::1', 1542431558, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433313535383b6c6f6761646f7c623a303b),
+('mntktm3jcratc6oea1g0eecc0t6u72bn', '::1', 1542426523, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432363532333b6c6f6761646f7c623a303b),
+('n3nrls7c716egeivi1urj5f5jhr20p0u', '::1', 1542422029, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432323032393b6c6f6761646f7c623a303b),
+('ngseisng4e6ovv812mgf0m6pq7hkk9do', '::1', 1542663259, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323636333235393b),
+('nnuptss6dn5hj5d6elue3o5ngf7robg0', '::1', 1542418699, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323431383639393b6c6f6761646f7c623a303b),
+('obqpubh0cr89ikbv9kme1udg65o0binj', '::1', 1542670323, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323637303332333b6c6f6761646f7c623a313b),
+('omqlbk7tdla2audd86l17un2h8d6hq2c', '::1', 1542425843, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432353834333b6c6f6761646f7c623a303b),
+('opevn9unk71fmeggankej8bd5c42jqg9', '::1', 1542420792, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432303739323b6c6f6761646f7c623a303b),
+('pb4iukj3o47dpft674o7534gnapg0erk', '::1', 1542432314, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433323331343b6c6f6761646f7c623a303b),
+('pbr5cc8th4eemt5vb1dmsdrs6mtj63k0', '::1', 1542432948, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433323934383b6c6f6761646f7c623a303b),
+('pp63b3if1etfaq8vlj7nnrqtfp7ma0p3', '::1', 1542431246, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433313234363b6c6f6761646f7c623a303b),
+('qjn8q322bg7j3n7uduo93ti0hjmlg4oc', '::1', 1542691691, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323639313639313b6c6f6761646f7c623a303b),
+('r3kv1rep1a0oo03vppic713d6226rjb8', '::1', 1542433651, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433333635313b6c6f6761646f7c623a303b),
+('r8sehjopoamgahhtogc1hser0jpuuk1d', '::1', 1542429677, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432393637373b6c6f6761646f7c623a303b),
+('sagfggl8idm97tcbh07pf92fid3s99qu', '::1', 1542423533, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432333533333b6c6f6761646f7c623a303b),
+('scsookhi6otm3emvmdm7bk47g764qrve', '::1', 1542428979, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432383937393b6c6f6761646f7c623a303b),
+('t127hauficv6obrlaqrv74spi1tp1gjq', '::1', 1542430943, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433303934333b6c6f6761646f7c623a303b),
+('tb5aph95p32g8d1hk03rgqp8rs5evvas', '::1', 1542427704, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432373730343b6c6f6761646f7c623a303b),
+('u38fnn3k93412pcqe98d2e7kbd68km3o', '::1', 1542690306, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323639303330363b6c6f6761646f7c623a303b),
+('v1f84lt1rrmfsonng17lsk0g5nqgdpm5', '::1', 1542422335, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432323333353b6c6f6761646f7c623a303b),
+('v7pddfabd6k01cv2q2udnc2hpfro0u1l', '::1', 1542690971, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323639303937313b6c6f6761646f7c623a303b),
+('vjrufn9e0rr1s8mkpep0s5ldte7nqp5p', '::1', 1542429365, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432393336353b6c6f6761646f7c623a303b);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `colegiado`
+--
+
+CREATE TABLE `colegiado` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(80) NOT NULL,
+  `sigla` varchar(10) NOT NULL,
+  `link_curso` varchar(200) NOT NULL,
+  `link_matriz` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `colegiado`
+--
+
+INSERT INTO `colegiado` (`id`, `nome`, `sigla`, `link_curso`, `link_matriz`) VALUES
+(3, 'Colegiado de Ciência da Computação', 'COCIC', 'https://www.escolha.ufop.br/cursos/ciencia-da-computacao', 'https://zeppelin10.ufop.br/SistemaAcademico/MatrizCurricular?codCurso=COM'),
+(5, 'Colegiado do Curso de Ciências Biológicas Bacharelado', 'COCBIB', 'https://www.escolha.ufop.br/cursos/ciencias-biologicas', 'https://zeppelin10.ufop.br/SistemaAcademico/MatrizCurricular?codCurso=CBB');
 
 -- --------------------------------------------------------
 
@@ -49,14 +131,11 @@ CREATE TABLE IF NOT EXISTS `ci_session` (
 -- Estrutura da tabela `contatos`
 --
 
-DROP TABLE IF EXISTS `contatos`;
-CREATE TABLE IF NOT EXISTS `contatos` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `contatos` (
+  `id` int(11) NOT NULL,
   `nome` varchar(200) NOT NULL,
-  `telefone` varchar(20) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `nome` (`nome`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+  `telefone` varchar(20) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `contatos`
@@ -88,9 +167,8 @@ INSERT INTO `contatos` (`id`, `nome`, `telefone`) VALUES
 -- Estrutura da tabela `cursos`
 --
 
-DROP TABLE IF EXISTS `cursos`;
-CREATE TABLE IF NOT EXISTS `cursos` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `cursos` (
+  `id` int(11) NOT NULL,
   `titulo` varchar(50) CHARACTER SET utf8 NOT NULL,
   `descricao` text CHARACTER SET utf8 NOT NULL,
   `video` text CHARACTER SET utf8 NOT NULL,
@@ -100,9 +178,8 @@ CREATE TABLE IF NOT EXISTS `cursos` (
   `duracao` int(11) NOT NULL,
   `vagas` int(11) NOT NULL,
   `turno` varchar(100) CHARACTER SET utf8 NOT NULL,
-  `info` varchar(200) CHARACTER SET utf8 NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+  `info` varchar(200) CHARACTER SET utf8 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `cursos`
@@ -126,14 +203,12 @@ INSERT INTO `cursos` (`id`, `titulo`, `descricao`, `video`, `link`, `atuacao`, `
 -- Estrutura da tabela `departamento`
 --
 
-DROP TABLE IF EXISTS `departamento`;
-CREATE TABLE IF NOT EXISTS `departamento` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `departamento` (
+  `id` int(11) NOT NULL,
   `link` text NOT NULL,
   `titulo` text NOT NULL,
-  `sigla` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+  `sigla` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `departamento`
@@ -155,13 +230,11 @@ INSERT INTO `departamento` (`id`, `link`, `titulo`, `sigla`) VALUES
 -- Estrutura da tabela `diretoria`
 --
 
-DROP TABLE IF EXISTS `diretoria`;
-CREATE TABLE IF NOT EXISTS `diretoria` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `diretoria` (
+  `id` int(11) NOT NULL,
   `nome` varchar(100) NOT NULL,
-  `cargo` text NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+  `cargo` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `diretoria`
@@ -176,16 +249,44 @@ INSERT INTO `diretoria` (`id`, `nome`, `cargo`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `funcionario`
+--
+
+CREATE TABLE `funcionario` (
+  `id` int(11) NOT NULL,
+  `colegiado` int(100) NOT NULL,
+  `nome` varchar(50) NOT NULL,
+  `telefone` varchar(15) CHARACTER SET utf8 NOT NULL,
+  `cargo` varchar(50) NOT NULL,
+  `membro` varchar(50) NOT NULL,
+  `email` varchar(60) NOT NULL,
+  `lattes` varchar(40) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `funcionario`
+--
+
+INSERT INTO `funcionario` (`id`, `colegiado`, `nome`, `telefone`, `cargo`, `membro`, `email`, `lattes`) VALUES
+(1, 5, 'Pedro Alves', '(31) 3559-1312', 'Secretário(a)', 'Membro do Colegiado', 'cocbib.iceb@ufop.edu.br', ''),
+(2, 3, 'Joubert Castro Lima', '', 'Coordenador(a)', 'Membro do NDE', 'joubert@gmail.com', 'http://lattes.cnpq.br/4646114975554537'),
+(4, 5, 'Eneida M. Eskinazi Sant’Anna', '(31) 3559-1312', 'Coordenador(a)', 'Membro do Colegiado', 'eskinazi@ufop.edu.br', 'http://lattes.cnpq.br/3676657135006759'),
+(5, 5, 'Ana Letícia Pilz de Castro', '', 'Membro', 'Membro do Colegiado', 'anacastro@ufop.edu.br', 'http://lattes.cnpq.br/1636925361891899'),
+(6, 5, 'Camila Carrião Machado Garcia', '(31) 3559-1698', 'Presidente', 'Membro do NDE', 'carriao@ufop.edu.br', 'http://lattes.cnpq.br/6201516426270860'),
+(7, 5, 'Alexandre S.de Paula', '(31) 3559-1244', 'Membro', 'Membro do NDE', 'alexandre.paula@ufop.edu.br', 'http://lattes.cnpq.br/2193708427094253'),
+(8, 5, 'Breno de Mello Silva', '(31) 3559-1695', 'Membro', 'Membro do NDE', 'breno@ufop.edu.br', 'http://lattes.cnpq.br/5291451453485893');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `mapas`
 --
 
-DROP TABLE IF EXISTS `mapas`;
-CREATE TABLE IF NOT EXISTS `mapas` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `mapas` (
+  `id` int(11) NOT NULL,
   `nome` varchar(100) NOT NULL,
-  `arquivo` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+  `arquivo` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `mapas`
@@ -200,14 +301,12 @@ INSERT INTO `mapas` (`id`, `nome`, `arquivo`) VALUES
 -- Estrutura da tabela `noticias`
 --
 
-DROP TABLE IF EXISTS `noticias`;
-CREATE TABLE IF NOT EXISTS `noticias` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `noticias` (
+  `id` int(11) NOT NULL,
   `titulo` varchar(150) NOT NULL,
   `link` text NOT NULL,
-  `data` date DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+  `data` date DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `noticias`
@@ -227,15 +326,12 @@ INSERT INTO `noticias` (`id`, `titulo`, `link`, `data`) VALUES
 -- Estrutura da tabela `pos-graduacao`
 --
 
-DROP TABLE IF EXISTS `pos-graduacao`;
-CREATE TABLE IF NOT EXISTS `pos-graduacao` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `pos-graduacao` (
+  `id` int(11) NOT NULL,
   `titulo` varchar(300) NOT NULL,
   `link` text NOT NULL,
-  `video` text NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `Titulo` (`titulo`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+  `video` text NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Extraindo dados da tabela `pos-graduacao`
@@ -256,13 +352,11 @@ INSERT INTO `pos-graduacao` (`id`, `titulo`, `link`, `video`) VALUES
 -- Estrutura da tabela `salas`
 --
 
-DROP TABLE IF EXISTS `salas`;
-CREATE TABLE IF NOT EXISTS `salas` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `salas` (
+  `id` int(11) NOT NULL,
   `nome` varchar(100) NOT NULL,
-  `arquivo` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+  `arquivo` varchar(100) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `salas`
@@ -285,11 +379,35 @@ INSERT INTO `salas` (`id`, `nome`, `arquivo`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `upload`
+--
+
+CREATE TABLE `upload` (
+  `id` int(11) NOT NULL,
+  `colegiado` int(11) NOT NULL,
+  `tipo` varchar(15) NOT NULL,
+  `arquivo` varchar(100) NOT NULL,
+  `descricao` text NOT NULL,
+  `download` tinyint(1) NOT NULL,
+  `nome` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `upload`
+--
+
+INSERT INTO `upload` (`id`, `colegiado`, `tipo`, `arquivo`, `descricao`, `download`, `nome`) VALUES
+(4, 5, 'ata', 'Atas para o site.rar', 'ATAS COCBIB Reuniões 2018', 1, 'Atas do Colegiado'),
+(5, 5, 'docs', 'Site ICEB.docx', 'Documento do departamento de biologia', 1, 'Documento 1'),
+(6, 5, 'aacc', 'Tabela AACC_NOVA_Bacharelado 2018.pdf', 'Tabela AACC do departamento de biologia', 1, 'Tabela AACC 1');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `usuario`
 --
 
-DROP TABLE IF EXISTS `usuario`;
-CREATE TABLE IF NOT EXISTS `usuario` (
+CREATE TABLE `usuario` (
   `user` varchar(20) CHARACTER SET utf8 NOT NULL,
   `senha` varchar(10) CHARACTER SET utf8 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -300,6 +418,155 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 
 INSERT INTO `usuario` (`user`, `senha`) VALUES
 ('VolutaSD', 'inovarsd');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `ci_session`
+--
+ALTER TABLE `ci_session`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `ci_sessions_timestamp` (`timestamp`);
+
+--
+-- Indexes for table `colegiado`
+--
+ALTER TABLE `colegiado`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `contatos`
+--
+ALTER TABLE `contatos`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `nome` (`nome`) USING BTREE;
+
+--
+-- Indexes for table `cursos`
+--
+ALTER TABLE `cursos`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `departamento`
+--
+ALTER TABLE `departamento`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `diretoria`
+--
+ALTER TABLE `diretoria`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `funcionario`
+--
+ALTER TABLE `funcionario`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `mapas`
+--
+ALTER TABLE `mapas`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `noticias`
+--
+ALTER TABLE `noticias`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `pos-graduacao`
+--
+ALTER TABLE `pos-graduacao`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `Titulo` (`titulo`) USING BTREE;
+
+--
+-- Indexes for table `salas`
+--
+ALTER TABLE `salas`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `upload`
+--
+ALTER TABLE `upload`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `colegiado`
+--
+ALTER TABLE `colegiado`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `contatos`
+--
+ALTER TABLE `contatos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
+-- AUTO_INCREMENT for table `cursos`
+--
+ALTER TABLE `cursos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `departamento`
+--
+ALTER TABLE `departamento`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `diretoria`
+--
+ALTER TABLE `diretoria`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `funcionario`
+--
+ALTER TABLE `funcionario`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `mapas`
+--
+ALTER TABLE `mapas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `noticias`
+--
+ALTER TABLE `noticias`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT for table `pos-graduacao`
+--
+ALTER TABLE `pos-graduacao`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `salas`
+--
+ALTER TABLE `salas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT for table `upload`
+--
+ALTER TABLE `upload`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

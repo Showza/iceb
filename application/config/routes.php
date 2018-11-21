@@ -56,3 +56,4 @@ $route['cursos/(:num)/(:any)'] = 'cursos/index/$1/$2';
 $route['posgraduacao/(:num)/(:any)'] = 'posgraduacao/index/$1/$2';
 $route['admin/login'] = 'admin/usuarios/login';
 $route['diretoria'] = 'diretoria/index';
+$route['colegiados/(:num)/(:any)'] = '/colegiados/index/$1/$2';
