@@ -18,23 +18,23 @@
         width: 250px !important;
         
     }
-     .area-principal{
+    .area-principal{
     width:100%;  
     background: url('../img/ICEBERA3.png') no-repeat; 
+    background-size: cover;
     padding-top: 225px;
-    padding-bottom: 225px;"
+    padding-bottom: 225px;
     }
     .small{
-
+    width:100%;    
     background: url('../img/ICEBERA3.png') no-repeat !important;
+    background-size: cover;
     height: 60px;
     color: #000 !important;
     
     line-height: 75px;
     transition: all 0.3s;
-
-
-    }
+}
 
 
 
@@ -49,12 +49,14 @@
     .area-principal{
     width:100%;  
     background: url('../img/ICEBERA3.png') no-repeat; 
+    background-size: cover;
     padding-top: 225px;
-    padding-bottom: 225px;"
+    padding-bottom: 225px;
     }
     .small{
-
+    width:100%;    
     background: url('../img/ICEBERA3.png') no-repeat !important;
+    background-size: cover;
     height: 60px;
     color: #000 !important;
     
@@ -76,13 +78,15 @@
     {
         width:100%;  
         background: url('../img/ICEBERA2.png') no-repeat; 
+        background-size: cover;
         padding-top: 225px;
-        padding-bottom: 225px;"
+        padding-bottom: 225px;
     }
     .small
     {
-
+        width:100%;
         background: url('../img/ICEBERA2.png') no-repeat !important;
+        background-size: cover;
         height: 60px;
         color: #000 !important;
         
@@ -102,15 +106,17 @@
         width: 300px  !important;
         
     }
-        .area-principal{
+    .area-principal{
     width:100%;  
     background: url('../img/ICEBERA2.png') no-repeat; 
+    background-size: cover;
     padding-top: 225px;
-    padding-bottom: 225px;"
+    padding-bottom: 225px;
     }
     .small{
-
+    width:100%;    
     background: url('../img/ICEBERA2.png') no-repeat !important;
+    background-size: cover;
     height: 60px;
     color: #000 !important;
     
@@ -132,12 +138,14 @@
     .area-principal{
     width:100%;  
     background: url('../img/ICEBERA2.png') no-repeat; 
+    background-size: cover;
     padding-top: 225px;
-    padding-bottom: 225px;"
+    padding-bottom: 225px;
     }
     .small{
-
+    width:100%;
     background: url('../img/ICEBERA2.png') no-repeat !important;
+    background-size: cover;
     height: 60px;
     color: #000 !important;
     
@@ -158,16 +166,18 @@
     }
     
     .area-principal{
-
-        background: url('../img/ICEBERA.png') ;
+        width:100%;
+        background: url('../img/ICEBERA2.png') ;
+        background-size: cover;
         padding-top: 225px;
-        padding-bottom: 225px;"
+        padding-bottom: 225px;
     }
     
     .small
     {
-
-        background: url('../img/ICEBERA.png')  !important;
+        width:100%;
+        background: url('../img/ICEBERA2.png')  !important;
+        background-size: cover;
         height: 60px;
         color: #000 !important;
         line-height: 75px;
