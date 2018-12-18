@@ -28,13 +28,11 @@
                             <img src="<?php echo base_url('assets/frontend/img/noticiasimg/premiacaoJaqueline.jpg') ?>" style="width: 450px"></center>
                             <div class="service_btn center"><a target="_blank" href="https://www.em.com.br/app/noticia/gerais/2018/08/14/interna_gerais,980025/pesquisadoras-da-ufmg-e-da-ufop-conquistam-premiacoes.shtml" class="btn waves-effect waves-red">&nbsp;  Saiba mais&nbsp;  </a></div>
                         </div>
-
-
-                        </div>
                     </div>
                 </div>
-            </div>
+            </div>        
             <br>
         </section><!-- End of Portfolio Section -->
-          </div>
-            </div>
+    </div>
+</div>
+            

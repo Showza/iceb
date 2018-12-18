@@ -129,20 +129,17 @@ input[type=date], input[type=datetime-local], input[type=email], input[type=numb
 ============================================================*/
 
 .small{
-
-    background: url('../img/ICEBERA2.png') no-repeat !important;
+    width: 100%;
+    background: url('../img/ICEBERA2.png') !important;
     height: 60px;
     color: #000 !important;
-
+    background-size: cover;
     line-height: 75px;
     transition: all 0.3s;
 
 
 }
-.small .navbar-brand {
-
-}
-
+.small .navbar-brand {}
 .nav ul li.active{
     background-color:rgba(0, 0, 0, 0.0);
 }
@@ -775,7 +772,7 @@ ul.kas-icon-aero li a:before{font-family: 'Glyphicons Halflings'; font-size:9px;
 
 /* Classes do Header */
 .navbartopfixedpals{background-color: rgba(0,0,0,0); height: 90px; padding-bottom: 10px;margin-bottom:20px;}
-.navbartopfixedtals{background: url('../img/ICEBERA2.png') no-repeat !important; width: 100%; height: 90px; padding-bottom: 10px; margin-bottom:20px;}
+.navbartopfixedtals{background: url('../img/ICEBERA2.png') repeat !important; width: 100%; height: 90px; padding-bottom: 10px; margin-bottom:20px;}
 .navbardoheader{margin-top:-10px;}
 .navbardoheader2{margin-top: 10px;}
 .navbarnavbrandheader{display: inline; margin-left: -65px; margin-right: 5px; margin-top:5px;}
