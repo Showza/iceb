@@ -55,13 +55,6 @@
                                  <br/>
                                  <br/>
 
-                                  <br/>
-                                <label id="txt-arquivo">Documento</label>
-                                 <input id="txt-arquivo" name="txt-arquivo" type="file" value="Procurar arquivo..." placeholder="nenhum arquivo selecionado">
-                                 <br/>
-                                 <br/>
-
-
                                  <br/>
                                  <label id="txt-download">O arquivo deve ficar disponível ao público para download? </label>
                                  <select id="txt-download" name="txt-download">

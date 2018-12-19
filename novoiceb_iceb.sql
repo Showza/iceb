@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 20-Nov-2018 às 21:51
--- Versão do servidor: 10.1.35-MariaDB
--- versão do PHP: 7.2.9
+-- Generation Time: 19-Dez-2018 às 23:25
+-- Versão do servidor: 10.1.37-MariaDB
+-- versão do PHP: 7.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -40,68 +40,53 @@ CREATE TABLE `ci_session` (
 --
 
 INSERT INTO `ci_session` (`id`, `ip_address`, `timestamp`, `data`) VALUES
-('02q34883fggphehjrjjimhmtlthrm801', '::1', 1542424532, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432343533323b6c6f6761646f7c623a303b),
-('0d4ietmq4reki8s4bufr3tvek0hr3tvm', '::1', 1542428040, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432383034303b6c6f6761646f7c623a303b),
-('1ceq3db189266ib9ia7045hp11o0smqv', '::1', 1542421097, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432313039373b6c6f6761646f7c623a303b),
-('22eprhfpmqt4qd4tgr46lb8vg29igt6g', '::1', 1542423129, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432333132393b6c6f6761646f7c623a303b),
-('2k1a2ldpcec52rs16qes7sfq7g1jpqf6', '::1', 1542427368, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432373336383b6c6f6761646f7c623a303b),
-('2renk48jrfjlt3r4ia0jb7kj1skfsoqf', '::1', 1542430625, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433303632353b6c6f6761646f7c623a303b),
-('36ooblevtcl8id1arhbvtd3jmhtrtrfk', '::1', 1542433971, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433333937313b6c6f6761646f7c623a303b),
-('3863bli8nffqq2cbh7gr7vip7sfd0f21', '::1', 1542419308, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323431393330383b6c6f6761646f7c623a303b),
-('4ngi8qq849t7pv9dnr7ucf1ps4uk0fhp', '::1', 1542691995, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323639313939353b6c6f6761646f7c623a313b),
-('56ge5o18h2okuaf8vq1kv1ceg5nflbkl', '::1', 1542425155, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432353135353b6c6f6761646f7c623a303b),
-('672mhf00as73062qhvcdisfq2j9oev7k', '::1', 1542421722, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432313732323b6c6f6761646f7c623a303b),
-('6qalutltk0mcm9fj2mrp9ef1o098fc29', '::1', 1542420129, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432303132393b6c6f6761646f7c623a303b),
-('7hblvviote0lrv096cn2fb7prg0id9fm', '::1', 1542669628, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323636393632383b),
-('7j6r05mk7jevmfbm2lanqmlr3r86jupp', '::1', 1542432635, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433323633353b6c6f6761646f7c623a303b),
-('7k00f1789cqrfmnph0tus1k9gl8c00je', '::1', 1542420451, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432303435313b6c6f6761646f7c623a303b),
-('7mjgr0v41nh3acorsubes6l6jr46b0nv', '::1', 1542424141, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432343134313b6c6f6761646f7c623a303b),
-('7o4kadgg9k1krk1bjim7fmfq4v9h4lo8', '::1', 1542691274, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323639313237343b6c6f6761646f7c623a303b),
-('86eb1canedr7fs179s78t2hodcmm484v', '::1', 1542423836, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432333833363b6c6f6761646f7c623a303b),
-('8n9cgr40i1nd24aahrbsoiur8ecdsq0m', '::1', 1542433982, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433333937313b6c6f6761646f7c623a303b),
-('8o2g9pel4sr66tf81ugpj3mkji464i3g', '::1', 1542419828, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323431393832383b6c6f6761646f7c623a303b),
-('ah4hu57u73pa7o3a577m7o28b506aoqq', '::1', 1542422681, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432323638313b6c6f6761646f7c623a303b),
-('appn4p5colhfvi31o0ncqk30d3mm7cu8', '::1', 1542692025, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323639313939353b6c6f6761646f7c623a303b),
-('atsc7s08qmtt9767dj4tif8jng3c3uif', '::1', 1542433326, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433333332363b6c6f6761646f7c623a303b),
-('c18c7essdhe2ogibgt5rnoer8i6uthq1', '::1', 1542427036, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432373033363b6c6f6761646f7c623a303b),
-('d7iop9t0oodnh08q2r8l0a5cema967cj', '::1', 1542487764, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323438373736343b),
-('dcvbop2ios0h5n39iltu7c657d2ed06v', '::1', 1542424846, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432343834363b6c6f6761646f7c623a303b),
-('ddou3cfp5fag7gj38a57s31b44gb33ct', '::1', 1542746961, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323734363936313b),
-('ds4tintek4qdpqpr0p8ob5huvotvfkq3', '::1', 1542746962, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323734363936313b),
-('euf41u2ejcmtea0u86c9j9u53suglh05', '::1', 1542690637, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323639303633373b6c6f6761646f7c623a303b),
-('fhhgmslusl63hndf3plg8sdl4bl5fsv9', '::1', 1542430297, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433303239373b6c6f6761646f7c623a303b),
-('gjcb0q97qtmh02f1cji1b2g3b1m0p0g8', '::1', 1542745980, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323734353938303b),
-('gm234dci0ugf9phq0lt5cm5q628aom3c', '::1', 1542428367, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432383336373b6c6f6761646f7c623a303b),
-('h41vufh42l6dgbs20bcdevvduo06j7ar', '::1', 1542429992, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432393939323b6c6f6761646f7c623a303b),
-('hmjh89k0q1vqmdb3o0a7rarq1po9huca', '::1', 1542428668, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432383636383b6c6f6761646f7c623a303b),
-('j1fbf8gtdc6mml1gbqa9fjefg06c81a2', '::1', 1542426210, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432363231303b6c6f6761646f7c623a303b),
-('jvnpflcbpb45gnpe6l8tavtk51earqt1', '::1', 1542418181, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323431383138313b6c6f6761646f7c623a303b),
-('k3fk9aok4e77faqi6p6r4pclpo9h51oh', '::1', 1542485113, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323438353131333b),
-('koolg9t5j9to09cu3tvsbc6mbohe2jev', '::1', 1542431864, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433313836343b6c6f6761646f7c623a303b),
-('ldha6usqglqeo04qru4lj2pj3bo15hd6', '::1', 1542425461, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432353436313b6c6f6761646f7c623a303b),
-('lof3ephc6jm3sddishc36iifp9qcvjt6', '::1', 1542421407, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432313430373b6c6f6761646f7c623a303b),
-('lr8r87nsuccgmbo4aaivvi7voi6e45a2', '::1', 1542431558, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433313535383b6c6f6761646f7c623a303b),
-('mntktm3jcratc6oea1g0eecc0t6u72bn', '::1', 1542426523, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432363532333b6c6f6761646f7c623a303b),
-('n3nrls7c716egeivi1urj5f5jhr20p0u', '::1', 1542422029, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432323032393b6c6f6761646f7c623a303b),
-('ngseisng4e6ovv812mgf0m6pq7hkk9do', '::1', 1542663259, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323636333235393b),
-('nnuptss6dn5hj5d6elue3o5ngf7robg0', '::1', 1542418699, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323431383639393b6c6f6761646f7c623a303b),
-('obqpubh0cr89ikbv9kme1udg65o0binj', '::1', 1542670323, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323637303332333b6c6f6761646f7c623a313b),
-('omqlbk7tdla2audd86l17un2h8d6hq2c', '::1', 1542425843, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432353834333b6c6f6761646f7c623a303b),
-('opevn9unk71fmeggankej8bd5c42jqg9', '::1', 1542420792, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432303739323b6c6f6761646f7c623a303b),
-('pb4iukj3o47dpft674o7534gnapg0erk', '::1', 1542432314, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433323331343b6c6f6761646f7c623a303b),
-('pbr5cc8th4eemt5vb1dmsdrs6mtj63k0', '::1', 1542432948, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433323934383b6c6f6761646f7c623a303b),
-('pp63b3if1etfaq8vlj7nnrqtfp7ma0p3', '::1', 1542431246, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433313234363b6c6f6761646f7c623a303b),
-('qjn8q322bg7j3n7uduo93ti0hjmlg4oc', '::1', 1542691691, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323639313639313b6c6f6761646f7c623a303b),
-('r3kv1rep1a0oo03vppic713d6226rjb8', '::1', 1542433651, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433333635313b6c6f6761646f7c623a303b),
-('r8sehjopoamgahhtogc1hser0jpuuk1d', '::1', 1542429677, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432393637373b6c6f6761646f7c623a303b),
-('sagfggl8idm97tcbh07pf92fid3s99qu', '::1', 1542423533, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432333533333b6c6f6761646f7c623a303b),
-('scsookhi6otm3emvmdm7bk47g764qrve', '::1', 1542428979, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432383937393b6c6f6761646f7c623a303b),
-('t127hauficv6obrlaqrv74spi1tp1gjq', '::1', 1542430943, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323433303934333b6c6f6761646f7c623a303b),
-('tb5aph95p32g8d1hk03rgqp8rs5evvas', '::1', 1542427704, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432373730343b6c6f6761646f7c623a303b),
-('u38fnn3k93412pcqe98d2e7kbd68km3o', '::1', 1542690306, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323639303330363b6c6f6761646f7c623a303b),
-('v1f84lt1rrmfsonng17lsk0g5nqgdpm5', '::1', 1542422335, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432323333353b6c6f6761646f7c623a303b),
-('v7pddfabd6k01cv2q2udnc2hpfro0u1l', '::1', 1542690971, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323639303937313b6c6f6761646f7c623a303b),
-('vjrufn9e0rr1s8mkpep0s5ldte7nqp5p', '::1', 1542429365, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534323432393336353b6c6f6761646f7c623a303b);
+('034juiva1hv212g73klr3ig8pgq2b2ce', '::1', 1545076271, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353037363235343b),
+('0c0r8ho97d9oersagvg45tmetao2n8tk', '::1', 1545076468, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353037363336333b6c6f6761646f7c623a313b),
+('0jkooul3fqlqk184ujmo01qh77mpfmtl', '::1', 1545079546, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353037393534363b6c6f6761646f7c623a313b),
+('0omasmv8jfkh5da8g31j7blib8qtvrdd', '::1', 1545144913, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134343931333b6c6f6761646f7c623a313b),
+('16226k0map7r609cqr5q5ng6aqgcvoqa', '::1', 1545138284, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353133383238343b6c6f6761646f7c623a313b),
+('1n7ikcpt7aks41m6qaa4c0ldt24ptmd3', '::1', 1545145613, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134353631333b6c6f6761646f7c623a313b),
+('1t1lcor75su52eoa5lgnv3n91cd4sd3b', '::1', 1545076198, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353037363131333b6c6f6761646f7c623a313b),
+('3d294fqb1g9qllogn83gg4l2pc6ckiit', '::1', 1545158823, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353135383832333b6c6f6761646f7c623a313b),
+('3jdmjl5dc36g4sib970dpgfqu9coeq1c', '::1', 1545076113, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353037363131333b6c6f6761646f7c623a313b),
+('4ib7se4lthg06944kr64neu0dkra5t5j', '::1', 1545148505, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134383530353b6c6f6761646f7c623a313b),
+('4nievjqkn3u2tsan9auh4ee9qtdpq5on', '::1', 1545077994, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353037373939343b6c6f6761646f7c623a313b),
+('68j6bipo3gblhb4h49tphv0akr6je6ep', '::1', 1545147075, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134373037353b6c6f6761646f7c623a313b),
+('6eijtpmsjrguplm3i8aikia1d89nh5mf', '::1', 1545141125, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134313132353b6c6f6761646f7c623a313b),
+('6v8oic3b2qjrj1p35t91kej136qq0eai', '::1', 1545139502, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353133393530323b6c6f6761646f7c623a313b),
+('790ks42b5gctmdg8d7fhkug7mq3o4dmv', '::1', 1545137956, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353133373935363b6c6f6761646f7c623a313b),
+('7hg4hah91jmrersp9kmfa1k72d0onnah', '::1', 1545140816, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134303831363b6c6f6761646f7c623a313b),
+('8l956fppnjovsob0act06gl7v28i51ch', '::1', 1545258302, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353235383038313b6c6f6761646f7c623a313b),
+('9k4kbd5i6ns1frg61qgn577co03hen4o', '::1', 1545140422, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134303432323b6c6f6761646f7c623a313b),
+('anhkmm8690l66k79l99ds197vqbvau5u', '::1', 1545139167, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353133393136373b6c6f6761646f7c623a313b),
+('blm1c6t9f6oa2sfkifj2a7bk0cn58d5j', '::1', 1545077690, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353037373639303b6c6f6761646f7c623a313b),
+('bmqqruov7e40usfjfjfk1a9lc194i64s', '::1', 1545076324, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353037363331373b6c6f6761646f7c623a313b),
+('c590j3omu8jjud06p71ad2ngc8qaj1ld', '::1', 1545080231, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353037393936313b6c6f6761646f7c623a313b),
+('duhoug5vq20fnt194ufhjvhg9p99fp14', '::1', 1545155571, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353135353537313b6c6f6761646f7c623a313b),
+('gi9vmasggs3h5a8eh0n3th2a4oqkl7bc', '::1', 1545146751, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134363735313b6c6f6761646f7c623a313b),
+('gjhlav17s5et95356be36r58cpu1tg16', '::1', 1545157808, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353135373830383b6c6f6761646f7c623a313b),
+('h77v5m4i7803k4kc538ta2umdarg6t38', '::1', 1545075404, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353037353430343b6c6f6761646f7c623a313b),
+('i87upqndr639161pmi1t121a77kpd3tn', '::1', 1545139821, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353133393832313b6c6f6761646f7c623a313b),
+('ihevfks5tekcm1kf5ce6h70lmb3ncruq', '::1', 1545078338, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353037383333383b6c6f6761646f7c623a313b),
+('kbb5mb3junsnbeg5hp2m6dvlth6mmfev', '::1', 1545155270, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353135353237303b6c6f6761646f7c623a313b),
+('kbll3926k5tqilc28rhk033fmjd4pda8', '::1', 1545144533, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134343533333b6c6f6761646f7c623a313b),
+('kjdt0u8n2lam5cagfq3sq1om7r9bbaok', '::1', 1545076838, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353037363833383b6c6f6761646f7c623a313b),
+('kngbmk99nrkuaiqm4g1v61fm47l99uj9', '::1', 1545141426, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134313432363b6c6f6761646f7c623a313b),
+('l4l969rip2k45515jkd1mpu3mbqs8kmg', '::1', 1545145926, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134353932363b6c6f6761646f7c623a313b),
+('lese92dabr33k1se0muahn533jhahpm8', '::1', 1545075710, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353037353731303b6c6f6761646f7c623a313b),
+('lnfi3b014pnof5e4l7n15ug053pr9dt4', '::1', 1545142852, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134323835323b6c6f6761646f7c623a313b),
+('mc7gbcl5l9q4cesevl411k82dpd2hiqo', '::1', 1545158847, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353135383832333b6c6f6761646f7c623a313b),
+('min047er0gafp2qefv0km09p8m83jd0t', '::1', 1545157424, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353135373432343b6c6f6761646f7c623a313b),
+('nm12fsk0pvbjd9ke9mp9lcd1od4pdel8', '::1', 1545138842, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353133383834323b6c6f6761646f7c623a313b),
+('of38j1fps8bdrjjb4d3kjo99mmb2sqbr', '::1', 1545142073, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134323037333b6c6f6761646f7c623a313b),
+('oknrv90a0biuv7ormk7sv5g8vrbbpk9d', '::1', 1545147420, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134373432303b6c6f6761646f7c623a313b),
+('p7p6i6gllv8p7on0o1djs0e5io4eefpr', '::1', 1545142374, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134323337343b6c6f6761646f7c623a313b),
+('qe51u9dvooks5q2et81vc9jsqv2sj9tc', '::1', 1545146375, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134363337353b6c6f6761646f7c623a313b),
+('qold99nbmrg73pgeklftph4r17qo82vc', '::1', 1545078769, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353037383736393b6c6f6761646f7c623a313b),
+('rvi8n7sd9j8qc38853320f5f5ej1nnpq', '::1', 1545143337, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353134333333373b6c6f6761646f7c623a313b),
+('sdn606ve9ab91s28rqkh6d1vnflfr1f3', '::1', 1545079961, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353037393936313b6c6f6761646f7c623a313b),
+('tdj3mamh4u3pffq9q7sfhtalp8eiihhl', '::1', 1545258081, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353235383038313b),
+('vplrhf78aifvgr4u9ho634atcb20ig7n', '::1', 1545077366, 0x5f5f63695f6c6173745f726567656e65726174657c693a313534353037373336363b6c6f6761646f7c623a313b);
 
 -- --------------------------------------------------------
 
@@ -194,8 +179,7 @@ INSERT INTO `cursos` (`id`, `titulo`, `descricao`, `video`, `link`, `atuacao`, `
 (6, 'Quimica Industrial', 'Pioneiro no estado de Minas Gerais, o curso foi criado em 1999 e reconhecido pelo MEC em 2003, ano em que se formou sua primeira turma. Além da formação específica na área ambiental, o curso oferece uma formação ampla que permite a atuação do profissional nos mais variados campos que o mercado de trabalho propõe. O químico industrial atua no controle de qualidade de matérias-primas, de produtos em processamentos e produtos acabados numa indústria química, além de elaborar laudos técnicos e prestar assessoria dentro de sua competência. O cumprimento do currículo do curso de Química Industrial da UFOP tem uma duração média de quatro anos, incluindo disciplinas obrigatórias, eletivas e horas de estágio. A grade curricular é composta por disciplinas que permeiam a matemática, física, química, biologia, administração, computação, expressão gráfica, tecnologia química, sempre alternando entre a teoria e a prática. A infraestrutura física da Universidade conta com laboratórios modernos, tanto de ensino, quanto de pesquisa e extensão. Tal estrutura, aliada aos diversos programas de bolsas ofertados pela instituição, permitem ao aluno o treinamento em recursos avançados e a maximização do seu aprendizado. A existência de monitorias para diversas disciplinas auxilia o processo de ensino-aprendizagem, e a possibilidade de participação em programas de iniciação científica completa o processo de produção do conhecimento. O corpo docente é composto essencialmente por professores doutores, cujos títulos foram obtidos nas mais renomadas instituições do país e do exterior. ', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/tA6CZwS0h7E\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>', 'MATRIZQUI22018_1.pdf', 'O químico industrial formado está efetivamente apto a desempenhar inúmeras funções, bem como produção; tratamentos prévios e complementares de produtos; pesquisa e desenvolvimento de operações e processos industriais; análise química e físico-química; químico-biológica, bromatológica, toxicológica e legal; padronização e controle de qualidade; operação e manutenção de equipamentos e instalações; execução de trabalhos técnicos; vistoria, perícia, avaliação, arbitrariamento e serviços técnicos; elaboração de pareceres, laudos e atestados; além de também poder exercer o magistério, conforme legislação vigente. ', 'Bacharelado', 8, 40, 'Diurno', ''),
 (7, 'Licenciatura Ciências Biológicas', 'Com a proposta de formar profissionais capacitados a compreender os fenômenos da natureza, a interferência do homem no meio ambiente e promover o desenvolvimento sustentável e conservação da biodiversidade, o curso oferece duas modalidades de formação: licenciatura e bacharelado. Com duração de oito semestres no bacharelado e nove semestres na licenciatura, ao longo da graduação o aluno é formado para lidar com desenvolvimento tecnológico e científico que envolve toda a área da biologia. A licenciatura tem como objetivo formar um profissional capacitado a trabalhar nos ensinos fundamental, médio e superior. A formação é composta por conhecimentos práticos interdisciplinares de biologia e pedagogia. O bacharelado forma profissionais qualificados a realizar pesquisas nas grandes áreas das Ciências Biológicas como a Parasitologia, Genética, Bioquímica, Ecologia, entre outras. A localização do curso na cidade de Ouro Preto se torna um fator de vantagem, já que as condições geológicas e biogeográficas são favoráveis para o desenvolvimento de pesquisas em Interações Biológicas, Biologia Evolutiva e Ecologia. O Parque do Itacolomy, o Parque Municipal das Andorinhas, a APA das Andorinhas e a Estação Ecológica do Tripuí são exemplos de ambientes amplamente estudados no curso. ', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/JUVD5QYyXzs\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>', 'MATRIZCBL32018_1.pdf', 'Além de seguir carreira na educação nos ensinos fundamental, médio e superior, o biólogo formado na UFOP está apto a formular e elaborar estudos, projetos ou pesquisa científica básica e aplicada nos diversos setores da biologia. Há também a possibilidade de orientar, dirigir, assessorar e prestar consultoria à empresas e fundações de âmbito público e privado relacionadas com biotecnologia, conservação biológica e estudos de impacto ambiental. ', 'Licenciatura', 9, 30, 'Noturno', 'https://docs.google.com/spreadsheets/d/1o8Zv2qmS3oLOemIHLXH17Vlk-lkCHGrm_j0QKle3Hhw/pubhtml'),
 (8, 'Licenciatura Física', ' O curso de licenciatura em física da UFOP teve seu início em 2012 e passou pelo processo de reconhecimento em 2016. São oferecidas 10 vagas anualmente com entrada no início do ano. Mais de 85% do corpo docente é composto por doutores com vasta experiência em pesquisa, tanto em Física Básica quanto em Ensino de Física.  Além disso, os alunos do curso de Licenciatura em Física têm à sua disposição um conjunto de laboratórios de Ensino de alta qualidade. São 4 Laboratórios de Ensino de Física Básica e 2 Laboratórios dedicados exclusivamente para alunos dos cursos de Física nas disciplinas de Física Experimental Avançada e em projetos desenvolvidos em Iniciações Científicas.  Os alunos do curso de Licenciatura em Física podem continuar sua formação dentro da UFOP ao ingressarem no Mestrado Profissional em Ensino de Ciências (MPEC) http://www.mpec.ufop.br ', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ITJ_zNWeHXY\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>', 'MATRIZFSL22018_1.pdf', 'O mercado de trabalho do bacharel em Física é vasto e abrange setores do ensino superior, de centros de pesquisa públicos e privados e indústrias. O profissional pode se especializar em diversas áreas, tais como: física de materiais, propriedades fundamentais da matéria, física teórica e computacional, biofísica, econofísica, física de partículas, física nuclear e ensino de ciências. ', 'Licenciatura', 8, 40, 'Diurno', ''),
-(9, 'Licenciatura Química', 'Com a criação do Plano de Reestruturação e Expansão das Universidades Federais (Reuni), o curso de Química, que já era idealizado antes de 2005, pôde ser viabilizado em 2008. Tem por objetivo formar profissionais bem qualificados para as diversas áreas de educação em química e visa à formação crítica com ações transformadoras da realidade atual. A matriz curricular possibilita a aquisição de conhecimento em quatro grandes eixos articuladores voltados para a interdisciplinaridade, visando à formação global do aluno. 1) Disciplinas de química e de outras áreas das ciências naturais, que proporcionam um conhecimento profundo da química em todas as suas dimensões. 2) Disciplinas e atividades relacionadas à didática, envolvendo os conhecimentos filosóficos, educacionais e pedagógicos da ação educativa.   3) Disciplinas e atividades relacionadas à prática pedagógica; 4) Disciplinas voltadas para uma formação humanística para o exercício pleno de cidadania. ', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/xMHay-Ps1Gw\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>', 'MATRIZQLI12018_1.pdf', 'O profissional formado no curso de licenciatura em química da UFOP pode atuar, imediatamente após a sua formatura, como professor de química no ensino básico (fundamental ou médio) ou exercer as atividades de consultoria, perícia, elaboração de laudos e pareceres, pesquisas em geral, análises químicas, físico-químicas, bromatológicas, toxicológicas e de controle de qualidade. Há também a opção de continuar seus estudos de pós-graduação para atuar como professor ou pesquisador em educação em química (área muito deficitária de profissionais dentre os cientistas no Brasil) com a importante missão de colaborar com as ações que definirão o futuro próximo da educação no Brasil. ', 'Licenciatura', 8, 40, 'Noturno', ''),
-(10, 'Licenciatura Matemática', 'Com o objetivo de atender à demanda regional de professores com licenciatura plena em Matemática, a Universidade Federal de Ouro Preto (UFOP) criou, em 1998, o curso de Matemática na modalidade Licenciatura. Atualmente, o curso conta também com habilitação em Bacharelado. O primeiro ano de estudos é comum a ambas as formações e, ao final do segundo semestre, o aluno deve optar por uma delas. O Bacharelado capacita o estudante para a pesquisa científica. Por meio da continuidade de estudos em nível de mestrado e doutorado o aluno também está apto à docência no ensino superior. A Licenciatura forma professores de Matemática para atuarem na educação básica (ensino fundamental, a partir do 6º ano, e no ensino médio). Assim como no bacharelado o estudante que der continuidade aos estudos em nível de mestrado e doutorado nas áreas de educação, também estará apto à docência. Sediado no Instituto de Ciências Exatas e Biológicas (ICEB), o Departamento de Matemática (Demat) da UFOP dispõe de estruturas que permitem a imersão do aluno, como biblioteca, sala de seminários, laboratório de informática e uma sala para estudos e pesquisa em Educação Matemática. O corpo docente é formado por mestres e doutores que, além de ensinarem na graduação e na pós-graduação, fomentam as iniciativas de projetos de pesquisa e extensão, envolvendo os alunos. ', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/xosjzD3nPxE\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>', 'MATRIZMTL22018_1.pdf', 'A presença da Matemática vai além do suporte teórico para as novas tecnologias; serve também como instrumento para interpretar e organizar informações, como na construção de tabelas de planos de saúde e imposto de renda. Assim, a compreensão matemática é fundamental para a vida em sociedade. O matemático poderá especializar-se em nível de pós-graduação para exercer a docência superior, especializar-se em áreas da Matemática pura ou aplicada a campos da engenharia, física, finanças, computação teórica, computação gráfica, entre outras. ', 'Licenciatura', 10, 40, 'Noturno', '');
+(9, 'Licenciatura Química', 'Com a criação do Plano de Reestruturação e Expansão das Universidades Federais (Reuni), o curso de Química, que já era idealizado antes de 2005, pôde ser viabilizado em 2008. Tem por objetivo formar profissionais bem qualificados para as diversas áreas de educação em química e visa à formação crítica com ações transformadoras da realidade atual. A matriz curricular possibilita a aquisição de conhecimento em quatro grandes eixos articuladores voltados para a interdisciplinaridade, visando à formação global do aluno. 1) Disciplinas de química e de outras áreas das ciências naturais, que proporcionam um conhecimento profundo da química em todas as suas dimensões. 2) Disciplinas e atividades relacionadas à didática, envolvendo os conhecimentos filosóficos, educacionais e pedagógicos da ação educativa.   3) Disciplinas e atividades relacionadas à prática pedagógica; 4) Disciplinas voltadas para uma formação humanística para o exercício pleno de cidadania. ', '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/xMHay-Ps1Gw\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>', 'MATRIZQLI12018_1.pdf', 'O profissional formado no curso de licenciatura em química da UFOP pode atuar, imediatamente após a sua formatura, como professor de química no ensino básico (fundamental ou médio) ou exercer as atividades de consultoria, perícia, elaboração de laudos e pareceres, pesquisas em geral, análises químicas, físico-químicas, bromatológicas, toxicológicas e de controle de qualidade. Há também a opção de continuar seus estudos de pós-graduação para atuar como professor ou pesquisador em educação em química (área muito deficitária de profissionais dentre os cientistas no Brasil) com a importante missão de colaborar com as ações que definirão o futuro próximo da educação no Brasil. ', 'Licenciatura', 8, 40, 'Noturno', '');
 
 -- --------------------------------------------------------
 
@@ -518,7 +502,7 @@ ALTER TABLE `contatos`
 -- AUTO_INCREMENT for table `cursos`
 --
 ALTER TABLE `cursos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `departamento`
@@ -566,7 +550,7 @@ ALTER TABLE `salas`
 -- AUTO_INCREMENT for table `upload`
 --
 ALTER TABLE `upload`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

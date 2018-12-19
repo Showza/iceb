@@ -31,7 +31,8 @@
                                  <input id="txt-video" name="txt-video" type="text" class="form-control" placeholder="Link do Video">
                                  <br/>
                                  <label id="txt-link">Matriz Curricular</label>
-                                 <input id="txt-link" name="txt-link" type="file" value="Procurar arquivo..." placeholder="nenhum arquivo selecionado">
+                                 <input id="txt-link" name="txt-link" type="file" accept="application/pdf" value="Procurar arquivo..." placeholder="nenhum arquivo selecionado">
+                                 <?php echo form_error('txt-link', '<p class="frm_err">', '<p>'); ?>
                                  <br/>
                                  <label id="txt-atuacao">Area de Atuacao</label>
                                  <input id="txt-atuacao" name="txt-atuacao" type="text" class="form-control" placeholder="Digite a área de atuação">
@@ -104,7 +105,7 @@
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                                                <a type="button" class="btn btn-primary" href="'.base_url("admin/cursos/remover/".$curso->id).'">Excluir</a>
+                                                <a type="button" class="btn btn-primary" href="'.base_url("admin/cursos/remover/".$curso->id.'/'.$curso->link).'">Excluir</a>
                                             </div>
 
                                         </div>
