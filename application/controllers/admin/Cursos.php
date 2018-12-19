@@ -31,14 +31,19 @@ class Cursos extends CI_Controller {
 
 	public function nova_matriz($id, $link){
         /*Exclusão do arquivo antigo*/
-        $this->load->helper("file");
+        $this->load->helper('file');
+
        $caminhoArquivo = './assets/arquivos/matrizes/'. $link;
 
-        if (!unlink($caminhoArquivo)){
-            echo 'Não foi possível excluir o arquivo antigo';
-        }
-        else
+        $extensoes_permitidas = array('.pdf');
+        // Faz a verificação da extensão do arquivo enviado
+        $extensao = strrchr($_FILES['txt-link']['name'], '.');
+        
+        if(in_array($extensao, $extensoes_permitidas) == true)
         {
+            if (!unlink($caminhoArquivo)){
+            echo 'Não foi possível excluir o arquivo antigo';
+            }
             $link = $_FILES['txt-link'];
             $original_name = $_FILES['txt-link']['name'];
             $new_name = strtr(utf8_decode($original_name), utf8_decode(' âãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY__');
@@ -57,6 +62,9 @@ class Cursos extends CI_Controller {
                 echo "Houve um erro no sistema!";
                 echo $this->upload->display_errors();
             }
+        }
+        else{
+            echo "Selecione apenas arquivos PDF !";   
         }
 	}
 
@@ -111,7 +119,7 @@ class Cursos extends CI_Controller {
 
             $link = $_FILES['txt-link'];
 						$original_name = $_FILES['txt-link']['name'];
-						$new_name = strtr(utf8_decode($original_name), utf8_decode(' àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY__');;
+						$new_name = strtr(utf8_decode($original_name), utf8_decode(' àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY__');
 						$configuracao['upload_path'] = './assets/arquivos/matrizes/';
 						$configuracao['allowed_types'] = 'pdf';
 						$configuracao['file_name'] = $new_name;
@@ -127,19 +135,23 @@ class Cursos extends CI_Controller {
 
 						if($this->upload->do_upload('txt-link')){
 							if($this->modelcursos->adicionar($titulo, $descricao, $video, $new_name, $atuacao, $modalidade, $duracao, $vagas, $turno, $info)){
-	                redirect(base_url('admin/cursos'));
-	            }
+	                            redirect(base_url('admin/cursos'));
+	                        }
 						}
-            else{
-                echo "Houve um erro no sistema!";
-								echo $this->upload->display_errors();
-            }
+                        else{
+                            echo "Houve um erro no sistema!";
+							echo $this->upload->display_errors();
+                        }
         }
     }
 
-    public function remover($id)
+    public function remover($id, $link)
     {
-        if($this->modelcursos->remover($id)){
+        $caminhoArquivo = './assets/arquivos/matrizes/'. $link;
+        if (!unlink($caminhoArquivo)){
+            echo 'Não foi possível excluir o arquivo antigo';
+        }
+        if($this->modelcursos->remover($id,$link)){
             redirect(base_url('admin/cursos'));
         }
         else{

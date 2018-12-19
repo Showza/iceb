@@ -152,13 +152,13 @@
                                 <div class="col-md-6">
                                     <ul>
                                         <?php if ($upload->tipo == "ata" && $upload->download == "1"){?>
-                                            <li><a href="<?php echo base_url('assets/arquivos/atas/'.$upload->arquivo) ?>"><button type="button" class="btn center"><i class="fa fa-file-pdf-o fa-1x"></i>&nbsp Atas Reuniões &nbsp &nbsp<i class="fa fa-download fa-2x"></i></button></li>
+                                            <li><a href="<?php echo base_url('./assets/arquivos/colegiado/'.$upload->arquivo) ?>"><button type="button" class="btn center"><i class="fa fa-file-pdf-o fa-1x"></i>&nbsp Atas Reuniões &nbsp &nbsp<i class="fa fa-download fa-2x"></i></button></li>
                                         <?php } ?>
                                         <?php if ($upload->tipo == "docs" && $upload->download == "1"){?>
-                                            <li><a href="<?php echo base_url('assets/arquivos/documentos/'.$upload->arquivo) ?>"><button type="button" class="btn center"><i class="fa fa-file-text fa-1x"></i>&nbsp &nbsp Documentos &nbsp &nbsp<i class="fa fa-download fa-2x"></i></button>  </li>
+                                            <li><a href="<?php echo base_url('./assets/arquivos/colegiado/'.$upload->arquivo) ?>"><button type="button" class="btn center"><i class="fa fa-file-text fa-1x"></i>&nbsp &nbsp Documentos &nbsp &nbsp<i class="fa fa-download fa-2x"></i></button>  </li>
                                         <?php } ?>
                                         <?php if ($upload->tipo == "aacc" && $upload->download == "1"){?>
-                                            <li><a href="<?php echo base_url('assets/arquivos/tabelas/'.$upload->arquivo) ?>"><button type="button" class="btn center"> <i class="fa fa-file-o fa-1x"></i>&nbsp &nbsp Tabela AACC &nbsp &nbsp<i class="fa fa-download fa-2x"></i></button></li>
+                                            <li><a href="<?php echo base_url('./assets/arquivos/colegiado/'.$upload->arquivo) ?>"><button type="button" class="btn center"> <i class="fa fa-file-o fa-1x"></i>&nbsp &nbsp Tabela AACC &nbsp &nbsp<i class="fa fa-download fa-2x"></i></button></li>
                                         <?php } ?>     
                                     </ul>
                                 </div>                                   

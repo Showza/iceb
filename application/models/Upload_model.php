@@ -48,15 +48,20 @@ class Upload_model extends CI_Model{
         return $this->db->delete('upload');
     }
 
-    public function alterar($id, $nome, $colegiado, $tipo, $arquivo, $descricao, $download){
+    public function alterar($id, $nome, $colegiado, $tipo, $descricao, $download){
         $dados['nome'] = $nome;
         $dados['colegiado'] = $colegiado;
         $dados['tipo'] = $tipo;
-        $dados['arquivo'] = $arquivo;
         $dados['descricao'] = $descricao;
         $dados['download'] = $download;
 
         $this->db->where('id',$id);
         return $this->db->update('upload',$dados);
+    }
+
+    public function novo_arquivo($id, $arquivo){
+        $dados['arquivo'] = $arquivo;
+      $this->db->where('id',$id);
+      return $this->db->update('upload',$dados);
     }
 }

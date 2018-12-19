@@ -52,7 +52,7 @@ class Cursos_model extends CI_Model {
         return $this->db->insert('cursos',$dados);
     }
 
-    public function remover($id){
+    public function remover($id, $link){
         $this->db->where('id',$id);
         return $this->db->delete('cursos');
     }

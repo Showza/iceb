@@ -32,10 +32,10 @@
                         <a href="<?php echo base_url('admin/colegiados') ?>"><i class="fa fa-building fa-fw"></i> Colegiados</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url('admin/funcionarios') ?>"><i class="fa fa-users fa-fw"></i> Funcionários</a>
+                        <a href="<?php echo base_url('admin/upload') ?>"><i class="fa fa-upload fa-fw"></i> Upload Colegiados</a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url('admin/upload') ?>"><i class="fa fa-upload fa-fw"></i> Upload de Arquivos</a>
+                        <a href="<?php echo base_url('admin/funcionarios') ?>"><i class="fa fa-users fa-fw"></i> Funcionários</a>
                     </li>
                     <li>
                         <a href="<?php echo base_url('admin/departamentos') ?>"><i class="fa fa-briefcase"></i> Departamentos</a>
