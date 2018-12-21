@@ -96,7 +96,7 @@
         <?php
         $arquivo = $mapa->arquivo;
         ?>
-        <p><a href="<?php echo base_url('assets/arquivos/salas/'.$arquivo) ?>" target="_blank"><?php echo $mapa->nome?></a></p>
+        <p><a href="<?php echo base_url('assets/arquivos/mapas/'.$arquivo) ?>" target="_blank"><?php echo $mapa->nome?></a></p>
       </div>
   <?php } ?>
     </div>
