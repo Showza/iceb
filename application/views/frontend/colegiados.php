@@ -148,26 +148,27 @@
                         <br/>                                  
                         <hr>
                         <div class="col-xs-12 center">
-                            <?php foreach($uploads as $upload) {?>
+                            <div class="service_btn center">
                                 <div class="col-md-6">
                                     <ul>
-                                        <?php if ($upload->tipo == "ata" && $upload->download == "1"){?>
-                                            <li><a href="<?php echo base_url('./assets/arquivos/colegiado/'.$upload->arquivo) ?>"><button type="button" class="btn center"><i class="fa fa-file-pdf-o fa-1x"></i>&nbsp Atas Reuniões &nbsp &nbsp<i class="fa fa-download fa-2x"></i></button></li>
-                                        <?php } ?>
-                                        <?php if ($upload->tipo == "docs" && $upload->download == "1"){?>
-                                            <li><a href="<?php echo base_url('./assets/arquivos/colegiado/'.$upload->arquivo) ?>"><button type="button" class="btn center"><i class="fa fa-file-text fa-1x"></i>&nbsp &nbsp Documentos &nbsp &nbsp<i class="fa fa-download fa-2x"></i></button>  </li>
-                                        <?php } ?>
-                                        <?php if ($upload->tipo == "aacc" && $upload->download == "1"){?>
-                                            <li><a href="<?php echo base_url('./assets/arquivos/colegiado/'.$upload->arquivo) ?>"><button type="button" class="btn center"> <i class="fa fa-file-o fa-1x"></i>&nbsp &nbsp Tabela AACC &nbsp &nbsp<i class="fa fa-download fa-2x"></i></button></li>
-                                        <?php } ?>     
-                                    </ul>
-                                </div>                                   
-                            <?php } ?>
+                                        <div>    
+                                            <li><a href="#!" class="btn  waves-effect waves-red" data-target="#uploads_atas" data-toggle="modal" ><i class="fa fa-file-pdf-o fa-1x"></i>&nbsp;  ATAS DE REUNIÕES&nbsp; <i class="fa fa-download fa-2x"></i></a></li>
+                                        </div>
+                                        <div class="service_btn center">
+                                            <li><a href="#!" class="btn  waves-effect waves-red" data-target="#uploads_docs" data-toggle="modal" ><i class="fa fa-file-text fa-1x"></i>&nbsp;  DOCUMENTOS&nbsp; <i class="fa fa-download fa-2x"></i></a></li>
+                                        </div>
+                                        <div class="service_btn center">
+                                            <li><a href="#!" class="btn  waves-effect waves-red" data-target="#uploads_tabelas" data-toggle="modal" ><i class="fa fa-file-o fa-1x"></i>&nbsp;  TABELAS&nbsp; <i class="fa fa-download fa-2x"></i></a></li>
+                                        </div>
+                                    </ul>    
+                                </div>   
+                            </div>         
 
                             <div class="col-md-6"> 
                                 <?php foreach($colegiados as $colegiado) {?>
                                     <ul>
-                                        <li><a href= "<?php echo $colegiado->link_matriz?>"> <button type="button" class="btn center"> <i class="fa fa-th fa-1x"></i>&nbsp &nbsp Matriz Curricular&nbsp &nbsp<i class="fa fa-download fa-2x"></i></button></a></li>
+                                        <li><a href= "<?php echo $colegiado->link_matriz?>" class="btn waves-effect waves-red"><i class="fa fa-th fa-1x"></i> &nbsp; MATRIZ CURRICULAR &nbsp; <i class="fa fa-download fa-2x"></i></a></li>                                    
+                                        <!--<li><a href= "<?php echo $colegiado->link_matriz?>"> <button type="button" class="btn center"> <i class="fa fa-th fa-1x"></i>&nbsp &nbsp Matriz Curricular&nbsp &nbsp<i class="fa fa-download fa-2x"></i></button></a></li>-->
                                     </ul>    
                                 <?php } ?> 
                                 <br>  
@@ -181,3 +182,72 @@
             </div>
             
         </section><!-- End of Portfolio Section -->
+
+        <!--Modal de downloads de atas do colegiado-->
+        <div id="uploads_atas" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Atas de reuniões do colegiado</h4>
+                    </div>
+                    <?php foreach($uploads as $upload){ ?>
+                        <div class="modal-body">
+                            <?php
+                                $arquivo = $upload->arquivo;
+                            ?>
+                            <?php if ($upload->tipo == "ata" && $upload->download == "1"){?>
+                                <p><a href="<?php echo base_url('assets/arquivos/colegiado/'.$arquivo) ?>" target="_blank"><?php echo $upload->arquivo?></a></p>
+                            <?php } ?>             
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal de downloads de documentos do colegiado-->
+        <div id="uploads_docs" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Documentos do colegiado</h4>
+                    </div>
+                    <?php foreach($uploads as $upload){ ?>
+                        <div class="modal-body">
+                            <?php
+                                $arquivo = $upload->arquivo;
+                            ?>
+                            <?php if ($upload->tipo == "docs" && $upload->download == "1"){?>
+                                <p><a href="<?php echo base_url('assets/arquivos/colegiado/'.$arquivo) ?>" target="_blank"><?php echo $upload->arquivo?></a></p>
+                            <?php } ?>             
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal de downloads de tabelas do colegiado-->
+        <div id="uploads_tabelas" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Tabelas do colegiado</h4>
+                    </div>
+                    <?php foreach($uploads as $upload){ ?>
+                        <div class="modal-body">
+                            <?php
+                                $arquivo = $upload->arquivo;
+                            ?>
+                            <?php if ($upload->tipo == "aacc" && $upload->download == "1"){?>
+                                <p><a href="<?php echo base_url('assets/arquivos/colegiado/'.$arquivo) ?>" target="_blank"><?php echo $upload->arquivo?></a></p>
+                            <?php } ?>             
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
