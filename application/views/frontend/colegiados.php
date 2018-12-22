@@ -190,18 +190,21 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Atas de reuniões do colegiado</h4>
+                            <h4 class="modal-title center">Atas de reuniões do colegiado</h4>
                     </div>
+                    <br>
+                    <ol>
                     <?php foreach($uploads as $upload){ ?>
-                        <div class="modal-body">
                             <?php
                                 $arquivo = $upload->arquivo;
                             ?>
                             <?php if ($upload->tipo == "ata" && $upload->download == "1"){?>
-                                <p><a href="<?php echo base_url('assets/arquivos/colegiado/'.$arquivo) ?>" target="_blank"><?php echo $upload->arquivo?></a></p>
-                            <?php } ?>             
-                        </div>
+                                <li><p><strong>Nome:</strong> <?php echo $upload->nome?> <a class="right" href="<?php echo base_url('assets/arquivos/colegiado/'.$arquivo) ?>" target="_blank"><strong>download</strong></a></p>                                
+                                <p><strong>Descrição:</strong> <?php echo $upload->descricao?></p></li> 
+                                <hr>
+                            <?php } ?>                          
                     <?php } ?>
+                    </ol>
                 </div>
             </div>
         </div>
@@ -213,18 +216,21 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Documentos do colegiado</h4>
+                            <h4 class="modal-title center">Documentos do colegiado</h4>
                     </div>
+                    <br>
+                    <ol>
                     <?php foreach($uploads as $upload){ ?>
-                        <div class="modal-body">
                             <?php
                                 $arquivo = $upload->arquivo;
                             ?>
                             <?php if ($upload->tipo == "docs" && $upload->download == "1"){?>
-                                <p><a href="<?php echo base_url('assets/arquivos/colegiado/'.$arquivo) ?>" target="_blank"><?php echo $upload->arquivo?></a></p>
+                                <li><p><strong>Nome:</strong> <?php echo $upload->nome?> <a class="right" href="<?php echo base_url('assets/arquivos/colegiado/'.$arquivo) ?>" target="_blank"><strong>download</strong></a></p>                                
+                                <p><strong>Descrição:</strong> <?php echo $upload->descricao?></p></li>
+                                <hr>
                             <?php } ?>             
-                        </div>
                     <?php } ?>
+                    </ol>
                 </div>
             </div>
         </div>
@@ -236,18 +242,21 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Tabelas do colegiado</h4>
+                            <h4 class="modal-title center">Tabelas do colegiado</h4>
                     </div>
+                    <br>
+                    <ol>
                     <?php foreach($uploads as $upload){ ?>
-                        <div class="modal-body">
                             <?php
                                 $arquivo = $upload->arquivo;
                             ?>
                             <?php if ($upload->tipo == "aacc" && $upload->download == "1"){?>
-                                <p><a href="<?php echo base_url('assets/arquivos/colegiado/'.$arquivo) ?>" target="_blank"><?php echo $upload->arquivo?></a></p>
+                                <li><p><strong>Nome:</strong> <?php echo $upload->nome?> <a class="right" href="<?php echo base_url('assets/arquivos/colegiado/'.$arquivo) ?>" target="_blank"><strong>download</strong></a></p>                                
+                                <p><strong>Descrição:</strong> <?php echo $upload->descricao?></p></li>
+                                <hr>
                             <?php } ?>             
-                        </div>
                     <?php } ?>
+                    </ol>
                 </div>
             </div>
         </div>
