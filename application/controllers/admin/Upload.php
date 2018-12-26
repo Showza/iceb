@@ -47,7 +47,7 @@ class Upload extends CI_Controller {
 
             $arquivo = $_FILES['txt-arquivo'];
                 $original_name = $_FILES['txt-arquivo']['name'];
-                $new_name = strtr(utf8_decode($original_name), utf8_decode(' àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()@#$'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY_____');
+                $new_name = strtr(utf8_decode($original_name), utf8_decode(' àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()@#$!%¨&*?+="[]{}-<>;^~§º¬°¢£³²¹ª|'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY___________________________________');;
                 $configuracao['upload_path'] = './assets/arquivos/colegiado/';
                 $configuracao['allowed_types'] = 'rar|zip|docx|pdf';
                 $configuracao['file_name'] = $new_name;
@@ -112,7 +112,7 @@ class Upload extends CI_Controller {
             }
             $arquivo = $_FILES['txt-arquivo'];
             $original_name = $_FILES['txt-arquivo']['name'];
-            $new_name = strtr(utf8_decode($original_name), utf8_decode(' âãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()@#$'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY_____');
+           $new_name = strtr(utf8_decode($original_name), utf8_decode(' àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()@#$!%¨&*?+="[]{}-<>;^~§º¬°¢£³²¹ª|'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY___________________________________');;
             $configuracao['upload_path'] = './assets/arquivos/colegiado/';
             $configuracao['allowed_types'] = 'rar|zip|docx|pdf';
             $configuracao['file_name'] = $new_name;

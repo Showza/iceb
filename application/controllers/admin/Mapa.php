@@ -80,7 +80,7 @@ class Mapa extends CI_Controller {
             $nome = $this->input->post('txt-nome');
             $arquivo = $_FILES['mapa'];
 			$original_name = $_FILES['mapa']['name'];
-			$new_name = strtr(utf8_decode($original_name), utf8_decode(' àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY__');;
+			$new_name = strtr(utf8_decode($original_name), utf8_decode(' àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()@#$!%¨&*?+="[]{}-<>;^~§º¬°¢£³²¹ª|'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY___________________________________');;
 			$configuracao['upload_path'] = './assets/arquivos/mapas/';
 			$configuracao['allowed_types'] = 'pdf';
 			$configuracao['file_name'] = $new_name;
@@ -112,7 +112,7 @@ class Mapa extends CI_Controller {
         {
             $arquivo = $_FILES['mapa'];
             $original_name = $_FILES['mapa']['name'];
-            $new_name = strtr(utf8_decode($original_name), utf8_decode(' àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY__');
+            $new_name = strtr(utf8_decode($original_name), utf8_decode(' àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()@#$!%¨&*?+="[]{}-<>;^~§º¬°¢£³²¹ª|'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY___________________________________');;
             $configuracao['upload_path'] = './assets/arquivos/mapas';
             $configuracao['allowed_types'] = 'pdf';
             $configuracao['file_name'] = $new_name;
