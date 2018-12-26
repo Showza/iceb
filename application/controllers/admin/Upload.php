@@ -9,13 +9,13 @@ class Upload extends CI_Controller {
 			redirect(base_url('admin/login'));
 		}
 
-        $this->load->model('Upload_model','modelupload'); 
-        $this->load->model('Colegiados_model','modelcole'); 
+        $this->load->model('Upload_model','modelupload');
+        $this->load->model('Colegiados_model','modelcole');
 	}
 
 	public function index(){
         $this->load->library('table');
-        $dados['uploads'] = $this->modelupload->listar_uploads(); 
+        $dados['uploads'] = $this->modelupload->listar_uploads();
         $dados['colegiados'] = $this->modelcole->listar_colegiados();
 		$dados['titulo']= 'Painel Administrativo';
         $dados['subtitulo'] = 'Upload';
@@ -29,7 +29,7 @@ class Upload extends CI_Controller {
     public function inserir()
     {
         $this->load->library('form_validation');
-        
+
         $this->form_validation->set_rules('txt-nome','Nome','required|min_length[3]');
         $this->form_validation->set_rules('txt-colegiado','Colegiado');
         $this->form_validation->set_rules('txt-tipo','Tipo');
@@ -44,10 +44,10 @@ class Upload extends CI_Controller {
             $nome = $this->input->post('txt-nome');
             $colegiado = $this->input->post('txt-colegiado');
             $tipo = $this->input->post('txt-tipo');
-           
+
             $arquivo = $_FILES['txt-arquivo'];
                 $original_name = $_FILES['txt-arquivo']['name'];
-                $new_name = strtr(utf8_decode($original_name), utf8_decode(' àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY__');
+                $new_name = strtr(utf8_decode($original_name), utf8_decode(' àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()@#$!%¨&*?+="[]{}-<>;^~§º¬°¢£³²¹ª|'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY___________________________________');;
                 $configuracao['upload_path'] = './assets/arquivos/colegiado/';
                 $configuracao['allowed_types'] = 'rar|zip|docx|pdf';
                 $configuracao['file_name'] = $new_name;
@@ -104,7 +104,7 @@ class Upload extends CI_Controller {
         $extensoes_permitidas = array('.rar','.zip','.docx','.pdf');
         // Faz a verificação da extensão do arquivo enviado
         $extensao = strrchr($_FILES['txt-arquivo']['name'], '.');
-        
+
         if(in_array($extensao, $extensoes_permitidas) == true)
         {
             if (!unlink($caminhoArquivo)){
@@ -112,7 +112,7 @@ class Upload extends CI_Controller {
             }
             $arquivo = $_FILES['txt-arquivo'];
             $original_name = $_FILES['txt-arquivo']['name'];
-            $new_name = strtr(utf8_decode($original_name), utf8_decode(' âãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY__');
+           $new_name = strtr(utf8_decode($original_name), utf8_decode(' àáâãäçèéêëìíîïñòóôõöùúûüýÿÀÁÂÃÄÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝ()@#$!%¨&*?+="[]{}-<>;^~§º¬°¢£³²¹ª|'), '_aaaaaceeeeiiiinooooouuuuyyAAAAACEEEEIIIINOOOOOUUUUY___________________________________');;
             $configuracao['upload_path'] = './assets/arquivos/colegiado/';
             $configuracao['allowed_types'] = 'rar|zip|docx|pdf';
             $configuracao['file_name'] = $new_name;
@@ -130,7 +130,7 @@ class Upload extends CI_Controller {
             }
         }
         else{
-            echo "Selecione apenas arquivos RAR, ZIP, DOCX e PDF !";   
+            echo "Selecione apenas arquivos RAR, ZIP, DOCX e PDF !";
         }
     }
 
