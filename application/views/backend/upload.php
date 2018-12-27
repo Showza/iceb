@@ -7,7 +7,7 @@
     </div>
     <!-- /.row -->
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-5">
             <div class="panel panel-default">
                 <div class="panel-heading">
                    <?php echo 'Adicionar'.' '.$subtitulo?>
@@ -86,7 +86,7 @@
             <!-- /.panel -->
         </div>
         <!-- /.col-lg-6 -->
-        <div class="col-lg-6">
+        <div class="col-lg-7">
             <div class="panel panel-default">
                 <div class="panel-heading">
                    <?php echo 'Alterar'.' '.$subtitulo ?>
@@ -96,12 +96,13 @@
                         <div class="col-lg-12">
                             
                             <?php
-                                $this->table->set_heading("Nome do Colegiado","Alterar Dados","Alterar Arquivos","Excluir Arquivos");
+                                $this->table->set_heading("Sigla do Colegiado","Nome do Arquivo","Alterar Dados","Alterar Arquivos","Excluir Arquivos");
                                 foreach($colegiados as $colegiado){                                    
                                     foreach($uploads as $upload){
                                         if ($colegiado->id == $upload->colegiado){
-                                            $nomecolegiado = $colegiado->nome;                                 
-                                            $arquivo = anchor(base_url('admin/upload/pagina_alterar/'.$upload->id),'<button type="button" class="btn btn-link"><i class="fa fa-refresh fa-fw"></i></span></button> '.$upload->arquivo.'&nbsp &nbsp <i class="fa fa-file fa-fw"></i>');
+                                            $nomecolegiado = $colegiado->sigla; 
+                                            $nomearquivo = $upload->arquivo;                                 
+                                            $arquivo = anchor(base_url('admin/upload/pagina_alterar/'.$upload->id),'<button type="button" class="btn btn-link"><i class="fa fa-refresh fa-fw"></i>Alterar</span></button>');
 
                                             $matriz = anchor(base_url('admin/upload/pagina_upload/'.$upload->id),'<button type="button" class="btn btn-link"><span style="color:purple"><i class="fa fa-file-pdf-o fa-fw"></i>Upload</span></button>');                          
 
@@ -123,7 +124,7 @@
                                                 </div>
                                             </div>';
 
-                                            $this->table->add_row($nomecolegiado,$arquivo,$matriz,$excluir);
+                                            $this->table->add_row($nomecolegiado,$nomearquivo,$arquivo,$matriz,$excluir);
                                         }
                                     }
                                 }
